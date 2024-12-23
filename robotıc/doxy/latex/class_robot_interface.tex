@@ -1,0 +1,137 @@
+\doxysection{Robot\+Interface Class Reference}
+\hypertarget{class_robot_interface}{}\label{class_robot_interface}\index{RobotInterface@{RobotInterface}}
+Inheritance diagram for Robot\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_robot_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_af3a31375ec541d2a71556a56e2ddcb1b}{turn\+Left}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_a1bb8ec9e5a0183500d6f90c7a3e07d9d}{turn\+Right}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_aca041d5251db50ce5fb31a8939c77678}{move\+Forward}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_aeec0b7977a702d4e04bfa6b1dc19edfc}{move\+Backward}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_ad9d254b344d3efd4b17d20c9c5453f25}{move\+Left}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_a5e7c5decd4275edc95df8383d4a260a2}{move\+Right}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_a73b6b5c80b53393baa7f487659af652c}{stop}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_robot_interface_a28c77058714ebabb415a1301504cedc2}{print}} ()=0
+\item 
+\Hypertarget{class_robot_interface_a3d025eebe1d18d468a45f82979390cb3}\label{class_robot_interface_a3d025eebe1d18d468a45f82979390cb3} 
+\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Pose} ()
+\item 
+\Hypertarget{class_robot_interface_a256739a342cc2592d6ef35ae16adb8b1}\label{class_robot_interface_a256739a342cc2592d6ef35ae16adb8b1} 
+void {\bfseries update\+Sensors} ()
+\item 
+\Hypertarget{class_robot_interface_ab18699d8a5e40a4acffad8a6f8e530ee}\label{class_robot_interface_ab18699d8a5e40a4acffad8a6f8e530ee} 
+void {\bfseries add\+Sensor} (\mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*}sensor)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_robot_interface_adfd0690237b85c4c8fdf8fc27da8b00b}\label{class_robot_interface_adfd0690237b85c4c8fdf8fc27da8b00b} 
+\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*} {\bfseries position}
+\item 
+\Hypertarget{class_robot_interface_a5e002a218f025862aef56855b52b4a75}\label{class_robot_interface_a5e002a218f025862aef56855b52b4a75} 
+int {\bfseries status}
+\item 
+\Hypertarget{class_robot_interface_a2df1c327f8927f962ef3c7dee99cbd72}\label{class_robot_interface_a2df1c327f8927f962ef3c7dee99cbd72} 
+std\+::vector$<$ \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} {\bfseries sensor\+List} = new vector$<$\mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}\texorpdfstring{$\ast$}{*}$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_robot_interface_aeec0b7977a702d4e04bfa6b1dc19edfc}\index{RobotInterface@{RobotInterface}!moveBackward@{moveBackward}}
+\index{moveBackward@{moveBackward}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveBackward()}{moveBackward()}}
+{\footnotesize\ttfamily \label{class_robot_interface_aeec0b7977a702d4e04bfa6b1dc19edfc} 
+virtual void Robot\+Interface\+::move\+Backward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_a7bdc29b721b4f55020950794fcdc9cf7}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_aca041d5251db50ce5fb31a8939c77678}\index{RobotInterface@{RobotInterface}!moveForward@{moveForward}}
+\index{moveForward@{moveForward}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveForward()}{moveForward()}}
+{\footnotesize\ttfamily \label{class_robot_interface_aca041d5251db50ce5fb31a8939c77678} 
+virtual void Robot\+Interface\+::move\+Forward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_a281867527cda4f618d107ab9d1fe4432}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_ad9d254b344d3efd4b17d20c9c5453f25}\index{RobotInterface@{RobotInterface}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_robot_interface_ad9d254b344d3efd4b17d20c9c5453f25} 
+virtual void Robot\+Interface\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_ac5f328d641d94270152848e6b5ca4696}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_a5e7c5decd4275edc95df8383d4a260a2}\index{RobotInterface@{RobotInterface}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a5e7c5decd4275edc95df8383d4a260a2} 
+virtual void Robot\+Interface\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_a066c5c3405a130afcccbe8dfd18f31e4}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_a28c77058714ebabb415a1301504cedc2}\index{RobotInterface@{RobotInterface}!print@{print}}
+\index{print@{print}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a28c77058714ebabb415a1301504cedc2} 
+virtual void Robot\+Interface\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_a40277d22826c47a6caaaab834c8c14e1}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_a73b6b5c80b53393baa7f487659af652c}\index{RobotInterface@{RobotInterface}!stop@{stop}}
+\index{stop@{stop}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a73b6b5c80b53393baa7f487659af652c} 
+virtual void Robot\+Interface\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_ac1794ed45702ca66b8dbfd27f3b08d04}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_af3a31375ec541d2a71556a56e2ddcb1b}\index{RobotInterface@{RobotInterface}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily \label{class_robot_interface_af3a31375ec541d2a71556a56e2ddcb1b} 
+virtual void Robot\+Interface\+::turn\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_af47acd0535d5627f4fdea6d01315dda1}{Festo\+Robot\+Interface}}.
+
+\Hypertarget{class_robot_interface_a1bb8ec9e5a0183500d6f90c7a3e07d9d}\index{RobotInterface@{RobotInterface}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!RobotInterface@{RobotInterface}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily \label{class_robot_interface_a1bb8ec9e5a0183500d6f90c7a3e07d9d} 
+virtual void Robot\+Interface\+::turn\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_festo_robot_interface_a85b476b76a2b5548e3021566c795a51d}{Festo\+Robot\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_robot_interface_8h}{Robot\+Interface.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Robot\+Interface.\+cpp\end{DoxyCompactItemize}

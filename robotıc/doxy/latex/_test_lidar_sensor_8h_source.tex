@@ -1,0 +1,41 @@
+\doxysection{Test\+Lidar\+Sensor.\+h}
+\hypertarget{_test_lidar_sensor_8h_source}{}\label{_test_lidar_sensor_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/TestLidarSensor.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/TestLidarSensor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ LIDAR\_SENSOR\_TEST\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ LIDAR\_SENSOR\_TEST\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mock_festo_robot_a_p_i}{MockFestoRobotAPI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_mock_festo_robot_a_p_i_ab21334ff95b2844f10aba3975ff3b42f}{MockFestoRobotAPI}}(\textcolor{keyword}{const}\ std::vector<float>\&\ mockData);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mock_festo_robot_a_p_i_ade3dc402abf9d425cd30f157943db11a}{getLidarRange}}(\textcolor{keywordtype}{float}*\ range);\ \textcolor{comment}{//\ "{}override"{}\ çýkarýldý, çünkü temel\ sýnýfta\ eksik\ olabilir.}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mock_festo_robot_a_p_i_a715c01970a24e1cde14bab6e50f8b232}{reset}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ std::vector<float>\ mockData;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ currentIndex;}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lidar_sensor_test}{LidarSensorTest}}\ \{}
+\DoxyCodeLine{00053\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lidar_sensor_test_a938bd32c6e0c23eb8fa32bac23c6cab2}{runAllTests}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ testUpdate();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ testGetRange();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ testGetMinAndMax();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ testOperatorOverload();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ testGetAngle();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ testPrint();}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LIDAR\_SENSOR\_TEST\_H}}
+
+\end{DoxyCode}

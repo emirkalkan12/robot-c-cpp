@@ -1,0 +1,58 @@
+\doxysection{Authentication Class Reference}
+\hypertarget{class_authentication}{}\label{class_authentication}\index{Authentication@{Authentication}}
+
+
+Handles user authentication using a \doxylink{class_robot_operator}{Robot\+Operator} and \doxylink{class_encryption}{Encryption}.  
+
+
+
+
+{\ttfamily \#include $<$Authentication.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_authentication_aa9b94b76dacc03be59b8d921acc198f9}{Authentication}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_authentication}{Authentication}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_authentication_aeb33404cd51828edf0db0cdce3c38b32}{authenticate}} ()
+\begin{DoxyCompactList}\small\item\em Authenticates the user based on name, surname, and access code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles user authentication using a \doxylink{class_robot_operator}{Robot\+Operator} and \doxylink{class_encryption}{Encryption}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_authentication_aa9b94b76dacc03be59b8d921acc198f9}\index{Authentication@{Authentication}!Authentication@{Authentication}}
+\index{Authentication@{Authentication}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{Authentication()}{Authentication()}}
+{\footnotesize\ttfamily \label{class_authentication_aa9b94b76dacc03be59b8d921acc198f9} 
+Authentication\+::\+Authentication (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor for \doxylink{class_authentication}{Authentication}. 
+
+Initializes \doxylink{class_authentication}{Authentication} with default values for \doxylink{class_robot_operator}{Robot\+Operator}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_authentication_aeb33404cd51828edf0db0cdce3c38b32}\index{Authentication@{Authentication}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{class_authentication_aeb33404cd51828edf0db0cdce3c38b32} 
+bool Authentication\+::authenticate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Authenticates the user based on name, surname, and access code. 
+
+This function prompts the user to enter their name, surname, and access code. It then checks the entered access code against the encrypted access code stored in the robot operator. If the access code is correct, the user is authenticated, otherwise, they are denied access.
+
+\begin{DoxyReturn}{Returns}
+Returns true if the user is successfully authenticated, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_authentication_8h}{Authentication.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Authentication.\+cpp\end{DoxyCompactItemize}

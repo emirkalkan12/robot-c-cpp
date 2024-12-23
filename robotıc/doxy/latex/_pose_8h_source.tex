@@ -1,0 +1,63 @@
+\doxysection{Pose.\+h}
+\hypertarget{_pose_8h_source}{}\label{_pose_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Pose.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Pose.h}}
+\mbox{\hyperlink{_pose_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pose}{Pose}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ x;\ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ y;\ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ th;\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ th);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_aaeeb27b336a6cfc08ae77b2bb5d8ba75}{getX}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_a9d1efd2c1807e1419dc81ba75e35e929}{setX}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_a5330d6027f92e5b2aaefd2f6a8a11c10}{getY}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac}{setY}}(\textcolor{keywordtype}{double}\ y);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_afd620e880fccff50310213cc4274e893}{getTh}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_ae2155663de71ff3d7decb6b7807f5c64}{setTh}}(\textcolor{keywordtype}{double}\ th);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pose_aa42067a0e15aa46dc8b9efff3881b5dc}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\ \mbox{\hyperlink{class_pose_a1c867394d66270d4a298ba7356bac85d}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\ \mbox{\hyperlink{class_pose_ad84fca234e5b3a9544e4ce7ee6ec33c7}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\&\ \mbox{\hyperlink{class_pose_a625f72535a51d90e48fd341fdcf8bf94}{operator+=}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ other);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}\&\ \mbox{\hyperlink{class_pose_a99d46bfa08be1c18d967a87780c7b084}{operator-\/=}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ other);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pose_a46ba39b98947ead3dd1b540e5eae894e}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pose}{Pose}}\&\ other);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_ad825de82a342050f295e2585a7ba63fd}{getPose}}(\textcolor{keywordtype}{double}\&\ \_x,\ \textcolor{keywordtype}{double}\&\ \_y,\ \textcolor{keywordtype}{double}\&\ \_th);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pose_af6457955dbb4d6ffbd812c9fab70b999}{setPose}}(\textcolor{keywordtype}{double}\ \_x,\ \textcolor{keywordtype}{double}\ \_y,\ \textcolor{keywordtype}{double}\ \_th);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_acc6ce39f14ab3690842940f117ad66d4}{findDistanceTo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pose}{Pose}}\&\ pos);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pose_a64e81f9dfdadeaf75c543011033678c1}{findAngleTo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pose}{Pose}}\&\ pos);}
+\DoxyCodeLine{00154\ \};}
+
+\end{DoxyCode}

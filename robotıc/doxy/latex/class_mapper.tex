@@ -1,0 +1,70 @@
+\doxysection{Mapper Class Reference}
+\hypertarget{class_mapper}{}\label{class_mapper}\index{Mapper@{Mapper}}
+
+
+Maps the environment using lidar sensors and robot control data.  
+
+
+
+
+{\ttfamily \#include $<$Mapper.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mapper_a8dcb6071bba8602871b2ad3b66b95675}\label{class_mapper_a8dcb6071bba8602871b2ad3b66b95675} 
+{\bfseries Mapper} (\mbox{\hyperlink{class_m_a_p}{MAP}} \texorpdfstring{$\ast$}{*}map, \mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}robot\+Controler, \mbox{\hyperlink{class_lidar_sensor}{Lidar\+Sensor}} \texorpdfstring{$\ast$}{*}lidar\+Sensor)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8}{update\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Updates the map using lidar sensor data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mapper_a6696f7397475bae11f8cc20002f62e30}{record\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Saves the current state of the map to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapper_a9ef2cbbc2974919674740f2838faba7e}{show\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Displays the current map on the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Maps the environment using lidar sensors and robot control data. 
+
+The \doxylink{class_mapper}{Mapper} class manages a grid-\/based map using data from a \doxylink{class_lidar_sensor}{Lidar\+Sensor} and a \doxylink{class_robot_controler}{Robot\+Controler}. It provides methods to update the map based on sensor data, save the map to a file, and display the map visually. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mapper_a6696f7397475bae11f8cc20002f62e30}\index{Mapper@{Mapper}!recordMap@{recordMap}}
+\index{recordMap@{recordMap}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{recordMap()}{recordMap()}}
+{\footnotesize\ttfamily \label{class_mapper_a6696f7397475bae11f8cc20002f62e30} 
+bool Mapper\+::record\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Saves the current state of the map to a file. 
+
+Stores the map data into a file for later use. \begin{DoxyReturn}{Returns}
+True if the map is successfully saved, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_mapper_a9ef2cbbc2974919674740f2838faba7e}\index{Mapper@{Mapper}!showMap@{showMap}}
+\index{showMap@{showMap}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{showMap()}{showMap()}}
+{\footnotesize\ttfamily \label{class_mapper_a9ef2cbbc2974919674740f2838faba7e} 
+void Mapper\+::show\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the current map on the console. 
+
+Prints the current state of the map grid to the console for visualization. \Hypertarget{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8}\index{Mapper@{Mapper}!updateMap@{updateMap}}
+\index{updateMap@{updateMap}!Mapper@{Mapper}}
+\doxysubsubsection{\texorpdfstring{updateMap()}{updateMap()}}
+{\footnotesize\ttfamily \label{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8} 
+void Mapper\+::update\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the map using lidar sensor data. 
+
+Retrieves the latest data from the lidar sensor and updates the map accordingly. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_mapper_8h}{Mapper.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Mapper.\+cpp\end{DoxyCompactItemize}

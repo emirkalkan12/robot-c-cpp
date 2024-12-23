@@ -1,0 +1,39 @@
+\doxysection{Robot\+Interface.\+h}
+\hypertarget{_robot_interface_8h_source}{}\label{_robot_interface_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/RobotInterface.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/RobotInterface.h}}
+\mbox{\hyperlink{_robot_interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pose_8h}{Pose.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_interface_8h}{SensorInterface.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ ROBOT\_INTERFACE\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ROBOT\_INTERFACE\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_robot_interface}{RobotInterface}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ turnLeft()\ =\ 0;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ turnRight()\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ moveForward()\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ moveBackward()\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ moveLeft()\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ moveRight()\ =\ 0;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ stop()\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ print()\ =\ 0;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}*\ getPose();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ updateSensors();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ addSensor(\mbox{\hyperlink{class_sensor_interface}{SensorInterface}}*\ sensor);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_pose}{Pose}}*\ position;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ status;}
+\DoxyCodeLine{00037\ \ \ \ \ std::vector<SensorInterface*>*\ sensorList\ =\ \textcolor{keyword}{new}\ vector<SensorInterface*>;}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ROBOT\_INTERFACE\_H}}
+
+\end{DoxyCode}

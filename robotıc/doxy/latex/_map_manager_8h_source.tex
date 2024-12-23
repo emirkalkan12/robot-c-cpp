@@ -1,0 +1,32 @@
+\doxysection{Map\+Manager.\+h}
+\hypertarget{_map_manager_8h_source}{}\label{_map_manager_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/MapManager.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/MapManager.h}}
+\mbox{\hyperlink{_map_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_m_a_p_8h}{MAP.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mapper_8h}{Mapper.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_8h}{Robot.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_map_manager}{MapManager}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_m_a_p}{MAP}}*\ map;}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_mapper}{Mapper}}*\ mapper;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}*\ lidarSensor;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_i_r_sensor}{IRSensor}}*\ irSensor;}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_map_manager}{MapManager}}(\mbox{\hyperlink{class_robot}{Robot}}*\ robot);}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_map_manager}{\string~MapManager}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ updateMap();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ recordMap(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ showMap();}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

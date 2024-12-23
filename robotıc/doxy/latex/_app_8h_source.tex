@@ -1,0 +1,47 @@
+\doxysection{App.\+h}
+\hypertarget{_app_8h_source}{}\label{_app_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/App.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/App.h}}
+\mbox{\hyperlink{_app_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_authentication_8h}{Authentication.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_connection_menu_8h}{ConnectionMenu.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_menu_8h}{SensorMenu.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_motion_menu_8h}{MotionMenu.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_map_menu_8h}{MapMenu.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ APP\_H}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ APP\_H}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app}{App}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ mainMenu\ =\ \textcolor{stringliteral}{"{}1.\ Connection\(\backslash\)n"{}}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2.\ Motion\(\backslash\)n"{}}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}3.\ Sensor\(\backslash\)n"{}}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}4.\ Map\(\backslash\)n"{}}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}0.\ Quit\(\backslash\)n"{}};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_authentication}{Authentication}}\ authentication;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_connection_menu}{ConnectionMenu}}*\ connectionMenu;}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_sensor_menu}{SensorMenu}}*\ sensorMenu;}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_motion_menu}{MotionMenu}}*\ motionMenu;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_map_menu}{MapMenu}}*\ mapMenu;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_robot}{Robot}}*\ robot;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_app_acb8cbf3e285b91d0170ffe87df5989c5}{App}}()\ :\ authentication()\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ robot\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_robot}{Robot}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ connectionMenu\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_connection_menu}{ConnectionMenu}}(robot);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ sensorMenu\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_sensor_menu}{SensorMenu}}(robot);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ motionMenu\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_motion_menu}{MotionMenu}}(robot);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ mapMenu\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_map_menu}{MapMenu}}(robot);}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_ae09dc71078b64c56c673b1ad1d25b5d1}{run}}();}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

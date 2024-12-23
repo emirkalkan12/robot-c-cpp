@@ -1,0 +1,36 @@
+\doxysection{Record.\+h}
+\hypertarget{_record_8h_source}{}\label{_record_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Record.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Record.h}}
+\mbox{\hyperlink{_record_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ RECORD\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ RECORD\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_record}{Record}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::fstream\ file;\ \ }
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ fileName;\ \ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_record}{Record}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_record}{Record}}(\textcolor{keyword}{const}\ std::string\&\ \_fileName);}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_record}{\string~Record}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ openFile();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ closeFile();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setFileName(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ readLine();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ writeLine(\textcolor{keyword}{const}\ std::string\&\ line);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_record}{Record}}\&\ operator<<(\textcolor{keyword}{const}\ std::string\&\ line);}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_record}{Record}}\&\ operator>>(std::string\&\ line);}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RECORD\_H}}
+\DoxyCodeLine{00038\ }
+
+\end{DoxyCode}

@@ -1,0 +1,73 @@
+\doxysection{Sensor\+Menu Class Reference}
+\hypertarget{class_sensor_menu}{}\label{class_sensor_menu}\index{SensorMenu@{SensorMenu}}
+Inheritance diagram for Sensor\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sensor_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sensor_menu_aa1582ab6a35f92598893aca4fb58a8a7}\label{class_sensor_menu_aa1582ab6a35f92598893aca4fb58a8a7} 
+{\bfseries Sensor\+Menu} (\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}robot)
+\item 
+void \mbox{\hyperlink{class_sensor_menu_acd648c43423136cf6a6422dde483975f}{print\+Choice}} () override
+\begin{DoxyCompactList}\small\item\em Virtual function to print menu choices. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sensor_menu_a6c85245d165e20cb006af4d8db8f2c81}{run}} () override
+\begin{DoxyCompactList}\small\item\em Virtual function to run the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_menus}{Menus}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menus_a100a136c94431b627f8b32548db9ccdc}{Menus}} (\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}\+\_\+robot)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_menus}{Menus}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_menus}{Menus}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries connection\+Err} = "{}Please connect to robot before this action!"{}
+\item 
+\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*} {\bfseries robot}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_menu_acd648c43423136cf6a6422dde483975f}\index{SensorMenu@{SensorMenu}!printChoice@{printChoice}}
+\index{printChoice@{printChoice}!SensorMenu@{SensorMenu}}
+\doxysubsubsection{\texorpdfstring{printChoice()}{printChoice()}}
+{\footnotesize\ttfamily \label{class_sensor_menu_acd648c43423136cf6a6422dde483975f} 
+void Sensor\+Menu\+::print\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Virtual function to print menu choices. 
+
+This function is virtual and may be overridden in derived classes to print the available menu choices. 
+
+Reimplemented from \mbox{\hyperlink{class_menus_a89299be27d25a2875950b770e4062b1d}{Menus}}.
+
+\Hypertarget{class_sensor_menu_a6c85245d165e20cb006af4d8db8f2c81}\index{SensorMenu@{SensorMenu}!run@{run}}
+\index{run@{run}!SensorMenu@{SensorMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_sensor_menu_a6c85245d165e20cb006af4d8db8f2c81} 
+bool Sensor\+Menu\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Virtual function to run the menu. 
+
+This function is virtual and may be overridden in derived classes to execute the specific functionality of the menu.
+
+\begin{DoxyReturn}{Returns}
+Returns false by default, indicating no specific action to continue. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_menus_a5e894c32ba24711a64643c80372b1575}{Menus}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_sensor_menu_8h}{Sensor\+Menu.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Sensor\+Menu.\+cpp\end{DoxyCompactItemize}

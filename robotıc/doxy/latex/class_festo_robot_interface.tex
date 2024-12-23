@@ -1,0 +1,182 @@
+\doxysection{Festo\+Robot\+Interface Class Reference}
+\hypertarget{class_festo_robot_interface}{}\label{class_festo_robot_interface}\index{FestoRobotInterface@{FestoRobotInterface}}
+Inheritance diagram for Festo\+Robot\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_festo_robot_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_festo_robot_interface_a577d41562a30b13e3bcc71e1f787bfb3}\label{class_festo_robot_interface_a577d41562a30b13e3bcc71e1f787bfb3} 
+{\bfseries Festo\+Robot\+Interface} (\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}\+\_\+robot\+API)
+\item 
+void \mbox{\hyperlink{class_festo_robot_interface_af47acd0535d5627f4fdea6d01315dda1}{turn\+Left}} () override
+\begin{DoxyCompactList}\small\item\em Turns the robot to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_a85b476b76a2b5548e3021566c795a51d}{turn\+Right}} () override
+\begin{DoxyCompactList}\small\item\em Turns the robot to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_a281867527cda4f618d107ab9d1fe4432}{move\+Forward}} () override
+\begin{DoxyCompactList}\small\item\em Moves the robot forward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_a7bdc29b721b4f55020950794fcdc9cf7}{move\+Backward}} () override
+\begin{DoxyCompactList}\small\item\em Moves the robot backward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_ac5f328d641d94270152848e6b5ca4696}{move\+Left}} () override
+\begin{DoxyCompactList}\small\item\em Moves the robot to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_a066c5c3405a130afcccbe8dfd18f31e4}{move\+Right}} () override
+\begin{DoxyCompactList}\small\item\em Moves the robot to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_ac1794ed45702ca66b8dbfd27f3b08d04}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stops the robot\textquotesingle{}s motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_festo_robot_interface_a40277d22826c47a6caaaab834c8c14e1}{print}} () override
+\begin{DoxyCompactList}\small\item\em Prints the current status and position of the robot. \end{DoxyCompactList}\item 
+\Hypertarget{class_festo_robot_interface_a99c1faf0f8bba9b430bbadd6e77d145d}\label{class_festo_robot_interface_a99c1faf0f8bba9b430bbadd6e77d145d} 
+void {\bfseries connect} ()
+\item 
+\Hypertarget{class_festo_robot_interface_a077c873736d584567aaeeb7f755aca38}\label{class_festo_robot_interface_a077c873736d584567aaeeb7f755aca38} 
+void {\bfseries change\+Status} (int new\+Status)
+\item 
+\Hypertarget{class_festo_robot_interface_af73f60ea3754a8609e47498fc2343f60}\label{class_festo_robot_interface_af73f60ea3754a8609e47498fc2343f60} 
+void {\bfseries update\+Positions} ()
+\begin{DoxyCompactList}\small\item\em Updates the internal position information based on the current robot status. \end{DoxyCompactList}\item 
+\Hypertarget{class_festo_robot_interface_a8abe760a9b505497bdf200cedfd15b28}\label{class_festo_robot_interface_a8abe760a9b505497bdf200cedfd15b28} 
+vector$<$ \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Sensors} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Pose} ()
+\item 
+void {\bfseries update\+Sensors} ()
+\item 
+void {\bfseries add\+Sensor} (\mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*}sensor)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose}{Pose}} \texorpdfstring{$\ast$}{*} {\bfseries position}
+\item 
+int {\bfseries status}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} {\bfseries sensor\+List} = new vector$<$\mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}\texorpdfstring{$\ast$}{*}$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_festo_robot_interface_a7bdc29b721b4f55020950794fcdc9cf7}\index{FestoRobotInterface@{FestoRobotInterface}!moveBackward@{moveBackward}}
+\index{moveBackward@{moveBackward}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveBackward()}{moveBackward()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_a7bdc29b721b4f55020950794fcdc9cf7} 
+void Festo\+Robot\+Interface\+::move\+Backward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves the robot backward. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_a281867527cda4f618d107ab9d1fe4432}\index{FestoRobotInterface@{FestoRobotInterface}!moveForward@{moveForward}}
+\index{moveForward@{moveForward}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveForward()}{moveForward()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_a281867527cda4f618d107ab9d1fe4432} 
+void Festo\+Robot\+Interface\+::move\+Forward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves the robot forward. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_ac5f328d641d94270152848e6b5ca4696}\index{FestoRobotInterface@{FestoRobotInterface}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_ac5f328d641d94270152848e6b5ca4696} 
+void Festo\+Robot\+Interface\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves the robot to the left. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_a066c5c3405a130afcccbe8dfd18f31e4}\index{FestoRobotInterface@{FestoRobotInterface}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_a066c5c3405a130afcccbe8dfd18f31e4} 
+void Festo\+Robot\+Interface\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves the robot to the right. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_a40277d22826c47a6caaaab834c8c14e1}\index{FestoRobotInterface@{FestoRobotInterface}!print@{print}}
+\index{print@{print}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_a40277d22826c47a6caaaab834c8c14e1} 
+void Festo\+Robot\+Interface\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prints the current status and position of the robot. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_ac1794ed45702ca66b8dbfd27f3b08d04}\index{FestoRobotInterface@{FestoRobotInterface}!stop@{stop}}
+\index{stop@{stop}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_ac1794ed45702ca66b8dbfd27f3b08d04} 
+void Festo\+Robot\+Interface\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stops the robot\textquotesingle{}s motion. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_af47acd0535d5627f4fdea6d01315dda1}\index{FestoRobotInterface@{FestoRobotInterface}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_af47acd0535d5627f4fdea6d01315dda1} 
+void Festo\+Robot\+Interface\+::turn\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turns the robot to the left. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+\Hypertarget{class_festo_robot_interface_a85b476b76a2b5548e3021566c795a51d}\index{FestoRobotInterface@{FestoRobotInterface}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!FestoRobotInterface@{FestoRobotInterface}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily \label{class_festo_robot_interface_a85b476b76a2b5548e3021566c795a51d} 
+void Festo\+Robot\+Interface\+::turn\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turns the robot to the right. 
+
+
+
+Implements \mbox{\hyperlink{class_robot_interface}{Robot\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_festo_robot_interface_8h}{Festo\+Robot\+Interface.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Festo\+Robot\+Interface.\+cpp\end{DoxyCompactItemize}

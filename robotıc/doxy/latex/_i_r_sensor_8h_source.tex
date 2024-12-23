@@ -1,0 +1,38 @@
+\doxysection{IRSensor.\+h}
+\hypertarget{_i_r_sensor_8h_source}{}\label{_i_r_sensor_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/IRSensor.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/IRSensor.h}}
+\mbox{\hyperlink{_i_r_sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}../../oop\_project/Project\_Packet/FestoRobotAPI.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_festo_robot_sensor_interface_8h}{FestoRobotSensorInterface.h}}"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_r_sensor}{IRSensor}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_festo_robot_sensor_interface}{FestoRobotSensorInterface}}\{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{double}\ ranges[9];\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_i_r_sensor_ac0173e3aa5306e649f40bb63b3ae75d5}{IRSensor}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_i_r_sensor_ac0173e3aa5306e649f40bb63b3ae75d5}{IRSensor}}(\mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ api);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_r_sensor_aee0a09e410af013d18e6e0061ca3cd96}{update}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_i_r_sensor_afb9ec4668ff0cfdb6a9b4bd71c803ba5}{getRange}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_i_r_sensor_ae8677adb9c96c0521b50adb4fb506fb2}{operator[]}}(\textcolor{keywordtype}{int}\ i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ Sensor\ Interface\ Implementation}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ updateSensor()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00078\ \ \ \ \ std::string\ getSensorValue()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ print()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+
+\end{DoxyCode}

@@ -1,0 +1,295 @@
+\doxysection{Robot\+Controler Class Reference}
+\hypertarget{class_robot_controler}{}\label{class_robot_controler}\index{RobotControler@{RobotControler}}
+
+
+\doxylink{class_robot_controler}{Robot\+Controler} class.  
+
+
+
+
+{\ttfamily \#include $<$Robot\+Controler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_robot_controler_a3af69bb584daa40001028f6c06716343}{Robot\+Controler}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_robot_controler_a4652757975df106c7a2d54b1382ccf2f}\label{class_robot_controler_a4652757975df106c7a2d54b1382ccf2f} 
+{\bfseries Robot\+Controler} (\mbox{\hyperlink{class_festo_robot_interface}{Festo\+Robot\+Interface}} \texorpdfstring{$\ast$}{*}\+\_\+robot)
+\item 
+\mbox{\hyperlink{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93}{\texorpdfstring{$\sim$}{\string~}\+Robot\+Controler}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19}{turn\+Left}} ()
+\begin{DoxyCompactList}\small\item\em turn\+Left function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29}{turn\+Right}} ()
+\begin{DoxyCompactList}\small\item\em turn\+Right function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa}{move\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em move\+Forward function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e}{move\+Backward}} ()
+\begin{DoxyCompactList}\small\item\em move\+Backward function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em move\+Left function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em move\+Right function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9}{stop}} ()
+\begin{DoxyCompactList}\small\item\em stop function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420}{get\+Pose}} ()
+\begin{DoxyCompactList}\small\item\em get\+Pose function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_controler_a240b2e253007a8791d52df85a32e18e0}{print}} ()
+\begin{DoxyCompactList}\small\item\em print function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_controler_a1ce9a8d2c412702047a944081ea68160}{connect\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em connect\+Robot function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2}{disconnect\+Robot}} ()
+\begin{DoxyCompactList}\small\item\em disconnect\+Robot function \end{DoxyCompactList}\item 
+\Hypertarget{class_robot_controler_ae4df0ea10ad5ef4179f45c2a8248c3c7}\label{class_robot_controler_ae4df0ea10ad5ef4179f45c2a8248c3c7} 
+void {\bfseries Update\+Sensors} ()
+\item 
+\Hypertarget{class_robot_controler_a3cf820466f12a6d124aef10319d77a53}\label{class_robot_controler_a3cf820466f12a6d124aef10319d77a53} 
+void {\bfseries add\+Sensor} (\mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*}sensor)
+\item 
+\Hypertarget{class_robot_controler_ab093b49c0e4f6fcae315d2a15c5f40ef}\label{class_robot_controler_ab093b49c0e4f6fcae315d2a15c5f40ef} 
+bool {\bfseries open\+Access} (int access\+Code)
+\item 
+\Hypertarget{class_robot_controler_a1ae522ffa339b54b92d60a8513f8ac13}\label{class_robot_controler_a1ae522ffa339b54b92d60a8513f8ac13} 
+bool {\bfseries close\+Access} (int access\+Code)
+\item 
+\Hypertarget{class_robot_controler_afa7479298401f8dbe135362eb54ca16b}\label{class_robot_controler_afa7479298401f8dbe135362eb54ca16b} 
+bool {\bfseries record\+Sensor} (string type)
+\item 
+\Hypertarget{class_robot_controler_abb52b81c55f30fa26ac87e38984da92b}\label{class_robot_controler_abb52b81c55f30fa26ac87e38984da92b} 
+void {\bfseries print\+Sensor} (string type)
+\item 
+\Hypertarget{class_robot_controler_ab3d3a558f9a2d42189235fca38d94035}\label{class_robot_controler_ab3d3a558f9a2d42189235fca38d94035} 
+\mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Sensor} (string type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_robot_controler}{Robot\+Controler} class. 
+
+Controls the movement of a robot in a 2D space.
+
+The \doxylink{class_robot_controler}{Robot\+Controler} class provides functionalities for controlling the movement of a robot in a 2D space. It uses the \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API} class to communicate with the robot and send commands for moving the robot in different directions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_robot_controler_a3af69bb584daa40001028f6c06716343}\index{RobotControler@{RobotControler}!RobotControler@{RobotControler}}
+\index{RobotControler@{RobotControler}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{RobotControler()}{RobotControler()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a3af69bb584daa40001028f6c06716343} 
+Robot\+Controler\+::\+Robot\+Controler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+Initializes the \doxylink{class_robot_controler}{Robot\+Controler} with default values. \Hypertarget{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93}\index{RobotControler@{RobotControler}!````~RobotControler@{\texorpdfstring{$\sim$}{\string~}RobotControler}}
+\index{````~RobotControler@{\texorpdfstring{$\sim$}{\string~}RobotControler}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RobotControler()}{\string~RobotControler()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ae93d0e5ef173cd2425842546b6aa6d93} 
+Robot\+Controler\+::\texorpdfstring{$\sim$}{\string~}\+Robot\+Controler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Cleans up dynamically allocated memory. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_robot_controler_a1ce9a8d2c412702047a944081ea68160}\index{RobotControler@{RobotControler}!connectRobot@{connectRobot}}
+\index{connectRobot@{connectRobot}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{connectRobot()}{connectRobot()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a1ce9a8d2c412702047a944081ea68160} 
+bool Robot\+Controler\+::connect\+Robot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+connect\+Robot function 
+
+This function connects the robot to the API if it is not already connected.
+
+This function connects the robot to the controller if it is not already connected. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the connection is successful, false otherwise.
+
+true if the connection is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2}\index{RobotControler@{RobotControler}!disconnectRobot@{disconnectRobot}}
+\index{disconnectRobot@{disconnectRobot}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{disconnectRobot()}{disconnectRobot()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a2db243aa549d95ebd7c9a38b78c41bb2} 
+bool Robot\+Controler\+::disconnect\+Robot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+disconnect\+Robot function 
+
+This function disconnects the robot from the API if it is connected.
+
+This function disconnects the robot from the controller if it is connected. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the disconnection is successful, false otherwise.
+
+true if the disconnection is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420}\index{RobotControler@{RobotControler}!getPose@{getPose}}
+\index{getPose@{getPose}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a75f1a4d93d5d1df59c8b3cff1465c420} 
+\mbox{\hyperlink{class_pose}{Pose}} Robot\+Controler\+::get\+Pose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+get\+Pose function 
+
+This function returns the current position and orientation of the robot.
+
+This function returns the current position and orientation of the robot. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current position of the robot as a \doxylink{class_pose}{Pose} object.
+
+The current position of the robot as a \doxylink{class_pose}{Pose} object. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e}\index{RobotControler@{RobotControler}!moveBackward@{moveBackward}}
+\index{moveBackward@{moveBackward}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveBackward()}{moveBackward()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ac9a73acd56221bc8d87c1830e35a322e} 
+void Robot\+Controler\+::move\+Backward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+move\+Backward function 
+
+This function moves the robot backward if it is connected.
+
+This function moves the robot backward. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa}\index{RobotControler@{RobotControler}!moveForward@{moveForward}}
+\index{moveForward@{moveForward}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveForward()}{moveForward()}}
+{\footnotesize\ttfamily \label{class_robot_controler_ad8d95d09a86124b2a097ef6c8866c1fa} 
+void Robot\+Controler\+::move\+Forward (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+move\+Forward function 
+
+This function moves the robot forward if it is connected.
+
+This function moves the robot forward. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350}\index{RobotControler@{RobotControler}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a1d514ae414d5bbad3be9fac2504b3350} 
+void Robot\+Controler\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+move\+Left function 
+
+This function moves the robot to the left if it is connected.
+
+This function moves the robot to the left. \Hypertarget{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e}\index{RobotControler@{RobotControler}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a4685389fb051fc95f71a6fdf74a5cc8e} 
+void Robot\+Controler\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+move\+Right function 
+
+This function moves the robot to the right if it is connected.
+
+This function moves the robot to the right. \Hypertarget{class_robot_controler_a240b2e253007a8791d52df85a32e18e0}\index{RobotControler@{RobotControler}!print@{print}}
+\index{print@{print}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a240b2e253007a8791d52df85a32e18e0} 
+void Robot\+Controler\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+print function 
+
+This function prints the current status of the robot.
+
+This function prints the current status of the robot. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9}\index{RobotControler@{RobotControler}!stop@{stop}}
+\index{stop@{stop}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a0a28ed96f57424d6cb87f6bba62ea7f9} 
+void Robot\+Controler\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+stop function 
+
+This function stops the robot if it is connected.
+
+This function stops the robot. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19}\index{RobotControler@{RobotControler}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily \label{class_robot_controler_acaef6de9e0dc30b79f6a707bbcaffe19} 
+void Robot\+Controler\+::turn\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+turn\+Left function 
+
+This function turns the robot to the left if it is connected.
+
+This function turns the robot to the left. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29}\index{RobotControler@{RobotControler}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!RobotControler@{RobotControler}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily \label{class_robot_controler_a678c257c350d46041cf29b91a7fc9d29} 
+void Robot\+Controler\+::turn\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+turn\+Right function 
+
+This function turns the robot to the right if it is connected.
+
+This function turns the robot to the right. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_robot_controler_8h}{Robot\+Controler.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Robot\+Controler.\+cpp\end{DoxyCompactItemize}

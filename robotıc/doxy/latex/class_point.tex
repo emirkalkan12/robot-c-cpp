@@ -1,0 +1,238 @@
+\doxysection{Point Class Reference}
+\hypertarget{class_point}{}\label{class_point}\index{Point@{Point}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_ad92f2337b839a94ce97dcdb439b4325a}{Point}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point_a78b55e8d5466bb8c2cf60fa55f2562ff}{Point}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_a655794dd595a4821987664bf1d9010e8}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Gets the X-\/coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a9aa66c310860d038cb1258dc5cd80906}{setX}} (double x)
+\begin{DoxyCompactList}\small\item\em Sets the X-\/coordinate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_aa323a12bec85e28ce6575dccec4f8b28}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Gets the Y-\/coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a7d1ee63237f361d41e697f87c3cb051d}{setY}} (double y)
+\begin{DoxyCompactList}\small\item\em Sets the Y-\/coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_aa412a0d1a49e1bf337e8ea7cc7ab074e}{get\+Point}} (double \&x, double \&y) const
+\begin{DoxyCompactList}\small\item\em Gets the point\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a2e2b78ea696ad1e8fdf86711e284d5ca}{set\+Point}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Sets the point\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_adc6ddc942336b687d4e8c4fc4677b691}{find\+Distance\+To}} (const \mbox{\hyperlink{class_point}{Point}} \&other) const
+\begin{DoxyCompactList}\small\item\em Calculates the distance to another point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_point_a85bdc5360b842fb11da37447f3e45123}{find\+Angle\+To}} (const \mbox{\hyperlink{class_point}{Point}} \&other) const
+\begin{DoxyCompactList}\small\item\em Calculates the angle to another point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_point_a9c29cd36d1ce448b8e1e56a204fe2b95}{operator==}} (const \mbox{\hyperlink{class_point}{Point}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compares two points for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_point_a2720546e4d26c3267f016cedcb05693b}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Outputs the point\textquotesingle{}s coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_point_ad92f2337b839a94ce97dcdb439b4325a}\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_point_ad92f2337b839a94ce97dcdb439b4325a} 
+Point\+::\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Initializes the point to (0, 0). \Hypertarget{class_point_a78b55e8d5466bb8c2cf60fa55f2562ff}\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_point_a78b55e8d5466bb8c2cf60fa55f2562ff} 
+Point\+::\+Point (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+Initializes the point with the given coordinates. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate of the point. \\
+\hline
+{\em y} & Y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_point_a85bdc5360b842fb11da37447f3e45123}\index{Point@{Point}!findAngleTo@{findAngleTo}}
+\index{findAngleTo@{findAngleTo}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{findAngleTo()}{findAngleTo()}}
+{\footnotesize\ttfamily \label{class_point_a85bdc5360b842fb11da37447f3e45123} 
+double Point\+::find\+Angle\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates the angle to another point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle (in radians) between this point and the other point. 
+\end{DoxyReturn}
+\Hypertarget{class_point_adc6ddc942336b687d4e8c4fc4677b691}\index{Point@{Point}!findDistanceTo@{findDistanceTo}}
+\index{findDistanceTo@{findDistanceTo}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{findDistanceTo()}{findDistanceTo()}}
+{\footnotesize\ttfamily \label{class_point_adc6ddc942336b687d4e8c4fc4677b691} 
+double Point\+::find\+Distance\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates the distance to another point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Euclidean distance between this point and the other point. 
+\end{DoxyReturn}
+\Hypertarget{class_point_aa412a0d1a49e1bf337e8ea7cc7ab074e}\index{Point@{Point}!getPoint@{getPoint}}
+\index{getPoint@{getPoint}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{getPoint()}{getPoint()}}
+{\footnotesize\ttfamily \label{class_point_aa412a0d1a49e1bf337e8ea7cc7ab074e} 
+void Point\+::get\+Point (\begin{DoxyParamCaption}\item[{double \&}]{x}{, }\item[{double \&}]{y}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the point\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Reference to store the X-\/coordinate. \\
+\hline
+{\em y} & Reference to store the Y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point_a655794dd595a4821987664bf1d9010e8}\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_point_a655794dd595a4821987664bf1d9010e8} 
+double Point\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the X-\/coordinate. 
+
+\begin{DoxyReturn}{Returns}
+The current X-\/coordinate value. 
+\end{DoxyReturn}
+\Hypertarget{class_point_aa323a12bec85e28ce6575dccec4f8b28}\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_point_aa323a12bec85e28ce6575dccec4f8b28} 
+double Point\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the Y-\/coordinate. 
+
+\begin{DoxyReturn}{Returns}
+The current Y-\/coordinate value. 
+\end{DoxyReturn}
+\Hypertarget{class_point_a9c29cd36d1ce448b8e1e56a204fe2b95}\index{Point@{Point}!operator==@{operator==}}
+\index{operator==@{operator==}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_point_a9c29cd36d1ce448b8e1e56a204fe2b95} 
+bool Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Compares two points for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The point to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the points are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_point_a2e2b78ea696ad1e8fdf86711e284d5ca}\index{Point@{Point}!setPoint@{setPoint}}
+\index{setPoint@{setPoint}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{setPoint()}{setPoint()}}
+{\footnotesize\ttfamily \label{class_point_a2e2b78ea696ad1e8fdf86711e284d5ca} 
+void Point\+::set\+Point (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Sets the point\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new X-\/coordinate value. \\
+\hline
+{\em y} & The new Y-\/coordinate value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point_a9aa66c310860d038cb1258dc5cd80906}\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily \label{class_point_a9aa66c310860d038cb1258dc5cd80906} 
+void Point\+::setX (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Sets the X-\/coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new X-\/coordinate value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point_a7d1ee63237f361d41e697f87c3cb051d}\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily \label{class_point_a7d1ee63237f361d41e697f87c3cb051d} 
+void Point\+::setY (\begin{DoxyParamCaption}\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Sets the Y-\/coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The new Y-\/coordinate value. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_point_a2720546e4d26c3267f016cedcb05693b}\index{Point@{Point}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_point_a2720546e4d26c3267f016cedcb05693b} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_point}{Point}} \&}]{point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Outputs the point\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream. \\
+\hline
+{\em point} & The point to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_point_8h}{Point.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Point.\+cpp\end{DoxyCompactItemize}

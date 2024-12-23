@@ -1,0 +1,30 @@
+\doxysection{Menus.\+h}
+\hypertarget{_menus_8h_source}{}\label{_menus_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Menus.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Menus.h}}
+\mbox{\hyperlink{_menus_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_8h}{Robot.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ MENUS\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ MENUS\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menus}{Menus}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ connectionErr\ =\ \textcolor{stringliteral}{"{}Please\ connect\ to\ robot\ before\ this\ action!"{}};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_robot}{Robot}}*\ robot;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_menus_a100a136c94431b627f8b32548db9ccdc}{Menus}}(\mbox{\hyperlink{class_robot}{Robot}}*\ \_robot)\ :\ robot(\_robot)\ \{\}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menus_a89299be27d25a2875950b770e4062b1d}{printChoice}}()\ \{\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_menus_a5e894c32ba24711a64643c80372b1575}{run}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

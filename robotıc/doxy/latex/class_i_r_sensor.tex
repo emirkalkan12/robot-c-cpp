@@ -1,0 +1,178 @@
+\doxysection{IRSensor Class Reference}
+\hypertarget{class_i_r_sensor}{}\label{class_i_r_sensor}\index{IRSensor@{IRSensor}}
+
+
+Handles the operations and data management for an IR sensor system.  
+
+
+
+
+{\ttfamily \#include $<$IRSensor.\+h$>$}
+
+Inheritance diagram for IRSensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_r_sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i_r_sensor_ac0173e3aa5306e649f40bb63b3ae75d5}\label{class_i_r_sensor_ac0173e3aa5306e649f40bb63b3ae75d5} 
+{\bfseries IRSensor} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Initializes the ranges array and sets {\ttfamily robot\+API} to nullptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_r_sensor_ae35cff4bbf49a4358086b599a39f7683}{IRSensor}} (\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}api)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_i_r_sensor_aee0a09e410af013d18e6e0061ca3cd96}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the range data from the connected IR sensor system. This function interacts with the robot API to refresh the sensor readings. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_i_r_sensor_afb9ec4668ff0cfdb6a9b4bd71c803ba5}{get\+Range}} (int index) const
+\begin{DoxyCompactList}\small\item\em Retrieves the range value at a specific index. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_i_r_sensor_ae8677adb9c96c0521b50adb4fb506fb2}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Overloaded subscript operator for range access. Provides index-\/based access to sensor range values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_i_r_sensor_a92571ceec80b852a283111bf4b419b61}{update\+Sensor}} () override
+\item 
+std\+::string \mbox{\hyperlink{class_i_r_sensor_aa4588a172d31901d973f9075857d5208}{get\+Sensor\+Value}} () override
+\item 
+void \mbox{\hyperlink{class_i_r_sensor_a6d2c8e3441035e9ae3aea1d96317d24d}{print}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_festo_robot_sensor_interface}{Festo\+Robot\+Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Festo\+Robot\+Sensor\+Interface} (string \+\_\+type, \mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}\+\_\+robot\+API)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sensor\+Interface} (std\+::string \+\_\+sensor\+Type)
+\item 
+std\+::string {\bfseries get\+Sensor\+Type} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_festo_robot_sensor_interface}{Festo\+Robot\+Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries sensor\+Type}
+\item 
+\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*} {\bfseries robot\+API}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries sensor\+Type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the operations and data management for an IR sensor system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_r_sensor_ae35cff4bbf49a4358086b599a39f7683}\index{IRSensor@{IRSensor}!IRSensor@{IRSensor}}
+\index{IRSensor@{IRSensor}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{IRSensor()}{IRSensor()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_ae35cff4bbf49a4358086b599a39f7683} 
+IRSensor\+::\+IRSensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}}]{api}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & A pointer to a \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API} object for sensor data updates. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize all range values to 0.\+0
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_r_sensor_afb9ec4668ff0cfdb6a9b4bd71c803ba5}\index{IRSensor@{IRSensor}!getRange@{getRange}}
+\index{getRange@{getRange}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_afb9ec4668ff0cfdb6a9b4bd71c803ba5} 
+double IRSensor\+::get\+Range (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the range value at a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired range value (0-\/8). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range value at the given index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the index is outside the valid range. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Return -\/ 1.\+0 for invalid indices\Hypertarget{class_i_r_sensor_aa4588a172d31901d973f9075857d5208}\index{IRSensor@{IRSensor}!getSensorValue@{getSensorValue}}
+\index{getSensorValue@{getSensorValue}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{getSensorValue()}{getSensorValue()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_aa4588a172d31901d973f9075857d5208} 
+std\+::string IRSensor\+::get\+Sensor\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}.
+
+\Hypertarget{class_i_r_sensor_ae8677adb9c96c0521b50adb4fb506fb2}\index{IRSensor@{IRSensor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_ae8677adb9c96c0521b50adb4fb506fb2} 
+double IRSensor\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption}) const}
+
+
+
+Overloaded subscript operator for range access. Provides index-\/based access to sensor range values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired range value (0-\/8). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range value at the given index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the index is outside the valid range. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_i_r_sensor_a6d2c8e3441035e9ae3aea1d96317d24d}\index{IRSensor@{IRSensor}!print@{print}}
+\index{print@{print}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_a6d2c8e3441035e9ae3aea1d96317d24d} 
+void IRSensor\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}.
+
+\Hypertarget{class_i_r_sensor_aee0a09e410af013d18e6e0061ca3cd96}\index{IRSensor@{IRSensor}!update@{update}}
+\index{update@{update}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_aee0a09e410af013d18e6e0061ca3cd96} 
+void IRSensor\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the range data from the connected IR sensor system. This function interacts with the robot API to refresh the sensor readings. 
+
+\texorpdfstring{$<$}{<} Retrieve range value for sensor i\Hypertarget{class_i_r_sensor_a92571ceec80b852a283111bf4b419b61}\index{IRSensor@{IRSensor}!updateSensor@{updateSensor}}
+\index{updateSensor@{updateSensor}!IRSensor@{IRSensor}}
+\doxysubsubsection{\texorpdfstring{updateSensor()}{updateSensor()}}
+{\footnotesize\ttfamily \label{class_i_r_sensor_a92571ceec80b852a283111bf4b419b61} 
+void IRSensor\+::update\+Sensor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/IRSensor.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,238 @@
+\doxysection{Lidar\+Sensor Class Reference}
+\hypertarget{class_lidar_sensor}{}\label{class_lidar_sensor}\index{LidarSensor@{LidarSensor}}
+
+
+Represents a Lidar sensor system for distance measurement.  
+
+
+
+
+{\ttfamily \#include $<$Lidar\+Sensor.\+h$>$}
+
+Inheritance diagram for Lidar\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lidar_sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_lidar_sensor_a434399185e14f697691cbf735d74ad65}\label{class_lidar_sensor_a434399185e14f697691cbf735d74ad65} 
+{\bfseries Lidar\+Sensor} (\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}robot\+API)
+\item 
+\mbox{\hyperlink{class_lidar_sensor_a6d31a7a0cfd7438217d259edd875b9a6}{\texorpdfstring{$\sim$}{\string~}\+Lidar\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lidar_sensor_ae4c3fae33f0a62ee1ebac2decaa683c2}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the Lidar range data. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_lidar_sensor_a694e7287bd7deee160bbed768c42a91b}{get\+Range}} (int index) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific range value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_lidar_sensor_addda17d8fbf2c3e3c5375ab97c4bd986}{get\+Min}} (int \&index) const
+\begin{DoxyCompactList}\small\item\em Retrieves the minimum range value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_lidar_sensor_aa29608884ed48c65f7832048208ee128}{get\+Max}} (int \&index) const
+\begin{DoxyCompactList}\small\item\em Retrieves the maximum range value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_lidar_sensor_a01148a1244540f90d759b42c8387aa9c}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Overloaded subscript operator for range access. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_lidar_sensor_ac27e5edca99baeac22b33be4cc5d18ae}{get\+Angle}} (int i) const
+\begin{DoxyCompactList}\small\item\em Retrieves the angle corresponding to a specific range. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lidar_sensor_a569fcf890a3758dda7849c6bb4ac5a87}{update\+Sensor}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_lidar_sensor_ad27614147f1bc451cb1db7e4416aa8ff}{get\+Sensor\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_lidar_sensor_af60d3a3de70e44041620bb89e50c1179}{print}} ()
+\item 
+\Hypertarget{class_lidar_sensor_ad5db908fc7b6aafe3a7d9b5262ef8071}\label{class_lidar_sensor_ad5db908fc7b6aafe3a7d9b5262ef8071} 
+int {\bfseries get\+Range\+Number} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_festo_robot_sensor_interface}{Festo\+Robot\+Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Festo\+Robot\+Sensor\+Interface} (string \+\_\+type, \mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*}\+\_\+robot\+API)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sensor\+Interface} (std\+::string \+\_\+sensor\+Type)
+\item 
+std\+::string {\bfseries get\+Sensor\+Type} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_festo_robot_sensor_interface}{Festo\+Robot\+Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries sensor\+Type}
+\item 
+\mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}} \texorpdfstring{$\ast$}{*} {\bfseries robot\+API}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries sensor\+Type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a Lidar sensor system for distance measurement. 
+
+The \doxylink{class_lidar_sensor}{Lidar\+Sensor} class interacts with a robot API to retrieve and store Lidar range data. It supports functionality for getting range values, finding the minimum and maximum ranges, and accessing the data via the subscript operator. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lidar_sensor_a6d31a7a0cfd7438217d259edd875b9a6}\index{LidarSensor@{LidarSensor}!````~LidarSensor@{\texorpdfstring{$\sim$}{\string~}LidarSensor}}
+\index{````~LidarSensor@{\texorpdfstring{$\sim$}{\string~}LidarSensor}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LidarSensor()}{\string~LidarSensor()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_a6d31a7a0cfd7438217d259edd875b9a6} 
+Lidar\+Sensor\+::\texorpdfstring{$\sim$}{\string~}\+Lidar\+Sensor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Frees dynamically allocated memory for the ranges array. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lidar_sensor_ac27e5edca99baeac22b33be4cc5d18ae}\index{LidarSensor@{LidarSensor}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_ac27e5edca99baeac22b33be4cc5d18ae} 
+double Lidar\+Sensor\+::get\+Angle (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the angle corresponding to a specific range. 
+
+Calculates and returns the angle corresponding to a specific range value. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle corresponding to the specified range. 
+\end{DoxyReturn}
+\Hypertarget{class_lidar_sensor_aa29608884ed48c65f7832048208ee128}\index{LidarSensor@{LidarSensor}!getMax@{getMax}}
+\index{getMax@{getMax}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{getMax()}{getMax()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_aa29608884ed48c65f7832048208ee128} 
+double Lidar\+Sensor\+::get\+Max (\begin{DoxyParamCaption}\item[{int \&}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the maximum range value. 
+
+Finds the maximum distance measured by the Lidar and returns the corresponding range value along with its index. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Reference to store the index of the maximum range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The maximum range value. 
+\end{DoxyReturn}
+\Hypertarget{class_lidar_sensor_addda17d8fbf2c3e3c5375ab97c4bd986}\index{LidarSensor@{LidarSensor}!getMin@{getMin}}
+\index{getMin@{getMin}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{getMin()}{getMin()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_addda17d8fbf2c3e3c5375ab97c4bd986} 
+double Lidar\+Sensor\+::get\+Min (\begin{DoxyParamCaption}\item[{int \&}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the minimum range value. 
+
+Finds the minimum distance measured by the Lidar and returns the corresponding range value along with its index. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Reference to store the index of the minimum range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minimum range value. 
+\end{DoxyReturn}
+\Hypertarget{class_lidar_sensor_a694e7287bd7deee160bbed768c42a91b}\index{LidarSensor@{LidarSensor}!getRange@{getRange}}
+\index{getRange@{getRange}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_a694e7287bd7deee160bbed768c42a91b} 
+double Lidar\+Sensor\+::get\+Range (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a specific range value. 
+
+Provides access to a specific Lidar range measurement by index. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired range value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range value at the given index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the index is not in the valid range \mbox{[}0, range\+Number-\/1\mbox{]}. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_lidar_sensor_ad27614147f1bc451cb1db7e4416aa8ff}\index{LidarSensor@{LidarSensor}!getSensorValue@{getSensorValue}}
+\index{getSensorValue@{getSensorValue}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{getSensorValue()}{getSensorValue()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_ad27614147f1bc451cb1db7e4416aa8ff} 
+std\+::string Lidar\+Sensor\+::get\+Sensor\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}.
+
+\Hypertarget{class_lidar_sensor_a01148a1244540f90d759b42c8387aa9c}\index{LidarSensor@{LidarSensor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_a01148a1244540f90d759b42c8387aa9c} 
+double Lidar\+Sensor\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption}) const}
+
+
+
+Overloaded subscript operator for range access. 
+
+Allows access to the Lidar range values using the subscript operator. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired range value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range value at the given index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the index is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_lidar_sensor_af60d3a3de70e44041620bb89e50c1179}\index{LidarSensor@{LidarSensor}!print@{print}}
+\index{print@{print}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_af60d3a3de70e44041620bb89e50c1179} 
+void Lidar\+Sensor\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}.
+
+\Hypertarget{class_lidar_sensor_ae4c3fae33f0a62ee1ebac2decaa683c2}\index{LidarSensor@{LidarSensor}!update@{update}}
+\index{update@{update}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_ae4c3fae33f0a62ee1ebac2decaa683c2} 
+void Lidar\+Sensor\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the Lidar range data. 
+
+Retrieves the latest Lidar measurements from the robot API and stores them in the {\ttfamily ranges} array. \Hypertarget{class_lidar_sensor_a569fcf890a3758dda7849c6bb4ac5a87}\index{LidarSensor@{LidarSensor}!updateSensor@{updateSensor}}
+\index{updateSensor@{updateSensor}!LidarSensor@{LidarSensor}}
+\doxysubsubsection{\texorpdfstring{updateSensor()}{updateSensor()}}
+{\footnotesize\ttfamily \label{class_lidar_sensor_a569fcf890a3758dda7849c6bb4ac5a87} 
+void Lidar\+Sensor\+::update\+Sensor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_sensor_interface}{Sensor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_lidar_sensor_8h}{Lidar\+Sensor.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Lidar\+Sensor.\+cpp\end{DoxyCompactItemize}

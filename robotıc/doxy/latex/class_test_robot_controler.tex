@@ -1,0 +1,105 @@
+\doxysection{Test\+Robot\+Controler Class Reference}
+\hypertarget{class_test_robot_controler}{}\label{class_test_robot_controler}\index{TestRobotControler@{TestRobotControler}}
+
+
+A class to test the behavior of the \doxylink{class_robot_controler}{Robot\+Controler} class.  
+
+
+
+
+{\ttfamily \#include $<$Test\+Robot\+Controler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_test_robot_controler_adea2521ae8a502f51827c1ca6fb07127}\label{class_test_robot_controler_adea2521ae8a502f51827c1ca6fb07127} 
+{\bfseries Test\+Robot\+Controler} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_test_robot_controler}{Test\+Robot\+Controler} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_test_robot_controler_a706452c8010ecc318d8155314c9f39fa}\label{class_test_robot_controler_a706452c8010ecc318d8155314c9f39fa} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Test\+Robot\+Controler} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \doxylink{class_test_robot_controler}{Test\+Robot\+Controler} object and cleans up any resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_robot_controler_a4c020b3edbd5d1262d5f119ebe94e53c}{test\+Disconnected\+Movement}} ()
+\begin{DoxyCompactList}\small\item\em Tests movement commands when the robot is disconnected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_robot_controler_a7b04539024a7dc2b22aa066b7c0b05c4}{test\+Connected\+Movement}} ()
+\begin{DoxyCompactList}\small\item\em Tests movement commands when the robot is connected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_robot_controler_a9946aa21bb5a28e7440611706aaed131}{test\+Movement\+After\+Disconnection}} ()
+\begin{DoxyCompactList}\small\item\em Tests movement commands after the robot is disconnected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_robot_controler_a227a95eb9ba96b83fdd1fedde3638a70}{test\+Multiple\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em Tests multiple connection and disconnection attempts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_robot_controler_a119e63439bf69c31b93818055a3902ad}{test\+Stop\+While\+Moving}} ()
+\begin{DoxyCompactList}\small\item\em Tests stopping the robot while it is moving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_robot_controler_ad7f60777e884883566c1914194453ff8}{run\+All\+Tests}} ()
+\begin{DoxyCompactList}\small\item\em Runs all available test scenarios for \doxylink{class_robot_controler}{Robot\+Controler}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to test the behavior of the \doxylink{class_robot_controler}{Robot\+Controler} class. 
+
+This class includes various test scenarios to validate the functionality of the \doxylink{class_robot_controler}{Robot\+Controler} class. It tests movement commands under different conditions such as connected and disconnected states, stopping while moving, and multiple connection attempts. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_test_robot_controler_ad7f60777e884883566c1914194453ff8}\index{TestRobotControler@{TestRobotControler}!runAllTests@{runAllTests}}
+\index{runAllTests@{runAllTests}!TestRobotControler@{TestRobotControler}}
+\doxysubsubsection{\texorpdfstring{runAllTests()}{runAllTests()}}
+{\footnotesize\ttfamily \label{class_test_robot_controler_ad7f60777e884883566c1914194453ff8} 
+void Test\+Robot\+Controler\+::run\+All\+Tests (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Runs all available test scenarios for \doxylink{class_robot_controler}{Robot\+Controler}. 
+
+This function sequentially calls all the test functions to validate the behavior of the \doxylink{class_robot_controler}{Robot\+Controler} class. \Hypertarget{class_test_robot_controler_a7b04539024a7dc2b22aa066b7c0b05c4}\index{TestRobotControler@{TestRobotControler}!testConnectedMovement@{testConnectedMovement}}
+\index{testConnectedMovement@{testConnectedMovement}!TestRobotControler@{TestRobotControler}}
+\doxysubsubsection{\texorpdfstring{testConnectedMovement()}{testConnectedMovement()}}
+{\footnotesize\ttfamily \label{class_test_robot_controler_a7b04539024a7dc2b22aa066b7c0b05c4} 
+void Test\+Robot\+Controler\+::test\+Connected\+Movement (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tests movement commands when the robot is connected. 
+
+Ensures that all movement commands (forward, backward, left, right, etc.) work correctly when the connection is active. \Hypertarget{class_test_robot_controler_a4c020b3edbd5d1262d5f119ebe94e53c}\index{TestRobotControler@{TestRobotControler}!testDisconnectedMovement@{testDisconnectedMovement}}
+\index{testDisconnectedMovement@{testDisconnectedMovement}!TestRobotControler@{TestRobotControler}}
+\doxysubsubsection{\texorpdfstring{testDisconnectedMovement()}{testDisconnectedMovement()}}
+{\footnotesize\ttfamily \label{class_test_robot_controler_a4c020b3edbd5d1262d5f119ebe94e53c} 
+void Test\+Robot\+Controler\+::test\+Disconnected\+Movement (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tests movement commands when the robot is disconnected. 
+
+Validates that the \doxylink{class_robot_controler}{Robot\+Controler} properly blocks movement commands when no connection is established. \Hypertarget{class_test_robot_controler_a9946aa21bb5a28e7440611706aaed131}\index{TestRobotControler@{TestRobotControler}!testMovementAfterDisconnection@{testMovementAfterDisconnection}}
+\index{testMovementAfterDisconnection@{testMovementAfterDisconnection}!TestRobotControler@{TestRobotControler}}
+\doxysubsubsection{\texorpdfstring{testMovementAfterDisconnection()}{testMovementAfterDisconnection()}}
+{\footnotesize\ttfamily \label{class_test_robot_controler_a9946aa21bb5a28e7440611706aaed131} 
+void Test\+Robot\+Controler\+::test\+Movement\+After\+Disconnection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tests movement commands after the robot is disconnected. 
+
+Checks that movement commands fail gracefully after the connection has been terminated. \Hypertarget{class_test_robot_controler_a227a95eb9ba96b83fdd1fedde3638a70}\index{TestRobotControler@{TestRobotControler}!testMultipleConnections@{testMultipleConnections}}
+\index{testMultipleConnections@{testMultipleConnections}!TestRobotControler@{TestRobotControler}}
+\doxysubsubsection{\texorpdfstring{testMultipleConnections()}{testMultipleConnections()}}
+{\footnotesize\ttfamily \label{class_test_robot_controler_a227a95eb9ba96b83fdd1fedde3638a70} 
+void Test\+Robot\+Controler\+::test\+Multiple\+Connections (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tests multiple connection and disconnection attempts. 
+
+Verifies that the \doxylink{class_robot_controler}{Robot\+Controler} handles repeated connection and disconnection commands without errors or unexpected behavior. \Hypertarget{class_test_robot_controler_a119e63439bf69c31b93818055a3902ad}\index{TestRobotControler@{TestRobotControler}!testStopWhileMoving@{testStopWhileMoving}}
+\index{testStopWhileMoving@{testStopWhileMoving}!TestRobotControler@{TestRobotControler}}
+\doxysubsubsection{\texorpdfstring{testStopWhileMoving()}{testStopWhileMoving()}}
+{\footnotesize\ttfamily \label{class_test_robot_controler_a119e63439bf69c31b93818055a3902ad} 
+void Test\+Robot\+Controler\+::test\+Stop\+While\+Moving (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tests stopping the robot while it is moving. 
+
+Ensures that the "{}stop"{} command interrupts movement commands and stops the robot successfully. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_test_robot_controler_8h}{Test\+Robot\+Controler.\+h}}\end{DoxyCompactItemize}

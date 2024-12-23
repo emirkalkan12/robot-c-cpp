@@ -1,0 +1,121 @@
+\doxysection{Motion\+Menu Class Reference}
+\hypertarget{class_motion_menu}{}\label{class_motion_menu}\index{MotionMenu@{MotionMenu}}
+
+
+Represents the menu for managing robot motion.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Menu.\+h$>$}
+
+Inheritance diagram for Motion\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_motion_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_motion_menu_a2c8c7fe5f20252c4d814400fc363246e}{Motion\+Menu}} (\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}robot)
+\begin{DoxyCompactList}\small\item\em Updates robot sensors based on the current state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motion_menu_a065d07cc3ad3c32f93539e3c5c7f8ff7}{print\+Choice}} () override
+\begin{DoxyCompactList}\small\item\em Overrides the print\+Choice function to print the menu choices. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_motion_menu_af5c417f0653b5dd45316967a3729e763}{run}} ()
+\begin{DoxyCompactList}\small\item\em Runs the motion menu and performs corresponding actions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_menus}{Menus}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menus_a100a136c94431b627f8b32548db9ccdc}{Menus}} (\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}\+\_\+robot)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_menus}{Menus}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_menus}{Menus}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries connection\+Err} = "{}Please connect to robot before this action!"{}
+\item 
+\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*} {\bfseries robot}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the menu for managing robot motion. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_motion_menu_a2c8c7fe5f20252c4d814400fc363246e}\index{MotionMenu@{MotionMenu}!MotionMenu@{MotionMenu}}
+\index{MotionMenu@{MotionMenu}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{MotionMenu()}{MotionMenu()}}
+{\footnotesize\ttfamily \label{class_motion_menu_a2c8c7fe5f20252c4d814400fc363246e} 
+Motion\+Menu\+::\+Motion\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}}]{robot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates robot sensors based on the current state. 
+
+This function updates the state of bumper, sonar, and force sensors based on the current state of the robot as obtained from the robot API.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bumper} & Pointer to the bumper sensor object. \\
+\hline
+{\em sonar} & Pointer to the sonar sensor object. \\
+\hline
+{\em force} & Pointer to the force sensor object. \\
+\hline
+{\em robot\+API} & Pointer to the Nao\+Robot\+API object.\\
+\hline
+\end{DoxyParams}
+Constructor for \doxylink{class_motion_menu}{Motion\+Menu}.
+
+Initializes the \doxylink{class_motion_menu}{Motion\+Menu} with a pointer to the \doxylink{class_robot}{Robot} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & Pointer to the \doxylink{class_robot}{Robot} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_motion_menu_a065d07cc3ad3c32f93539e3c5c7f8ff7}\index{MotionMenu@{MotionMenu}!printChoice@{printChoice}}
+\index{printChoice@{printChoice}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{printChoice()}{printChoice()}}
+{\footnotesize\ttfamily \label{class_motion_menu_a065d07cc3ad3c32f93539e3c5c7f8ff7} 
+void Motion\+Menu\+::print\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Overrides the print\+Choice function to print the menu choices. 
+
+Outputs the available choices for the user in the motion menu. 
+
+Reimplemented from \mbox{\hyperlink{class_menus_a89299be27d25a2875950b770e4062b1d}{Menus}}.
+
+\Hypertarget{class_motion_menu_af5c417f0653b5dd45316967a3729e763}\index{MotionMenu@{MotionMenu}!run@{run}}
+\index{run@{run}!MotionMenu@{MotionMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_motion_menu_af5c417f0653b5dd45316967a3729e763} 
+bool Motion\+Menu\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Runs the motion menu and performs corresponding actions. 
+
+Runs the motion menu and performs corresponding robot motions.
+
+This function displays the motion menu and allows the user to choose various robot motion options such as moving forward, backward, turning left or right, printing the controller status, and returning to the main menu or exiting the program.
+
+\begin{DoxyReturn}{Returns}
+Returns true to continue executing the main menu, false to exit the program. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_menus_a5e894c32ba24711a64643c80372b1575}{Menus}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_motion_menu_8h}{Motion\+Menu.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Motion\+Menu.\+cpp\end{DoxyCompactItemize}

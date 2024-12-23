@@ -1,0 +1,44 @@
+\doxysection{Festo\+Robot\+Interface.\+h}
+\hypertarget{_festo_robot_interface_8h_source}{}\label{_festo_robot_interface_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/FestoRobotInterface.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/FestoRobotInterface.h}}
+\mbox{\hyperlink{_festo_robot_interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../../oop\_project/Project\_Packet/FestoRobotAPI.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pose_8h}{Pose.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_interface_8h}{RobotInterface.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_interface_8h}{SensorInterface.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#ifndef\ NAOROBOTINTERFACE\_H}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ NAOROBOTINTERFACE\_H}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_festo_robot_interface}{FestoRobotInterface}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_robot_interface}{RobotInterface}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_interface}{FestoRobotInterface}}(\mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ \_robotAPI);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_af47acd0535d5627f4fdea6d01315dda1}{turnLeft}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_a85b476b76a2b5548e3021566c795a51d}{turnRight}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_a281867527cda4f618d107ab9d1fe4432}{moveForward}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_a7bdc29b721b4f55020950794fcdc9cf7}{moveBackward}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_ac5f328d641d94270152848e6b5ca4696}{moveLeft}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_a066c5c3405a130afcccbe8dfd18f31e4}{moveRight}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_ac1794ed45702ca66b8dbfd27f3b08d04}{stop}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_a40277d22826c47a6caaaab834c8c14e1}{print}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ connect();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ changeStatus(\textcolor{keywordtype}{int}\ newStatus);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_festo_robot_interface_af73f60ea3754a8609e47498fc2343f60}{updatePositions}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ vector<SensorInterface*>\ getSensors();}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

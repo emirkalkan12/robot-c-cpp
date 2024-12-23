@@ -1,0 +1,32 @@
+\doxysection{Sensor\+Menu.\+h}
+\hypertarget{_sensor_menu_8h_source}{}\label{_sensor_menu_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/SensorMenu.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/SensorMenu.h}}
+\mbox{\hyperlink{_sensor_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menus_8h}{Menus.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_interface_8h}{SensorInterface.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ SENSORMENU\_H}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ SENSORMENU\_H}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sensor_menu}{SensorMenu}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_menus}{Menus}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ state0\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ state1\ =\ 1;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ choice\ =\ \textcolor{stringliteral}{"{}1.\ IR\ Sensor\ Info\(\backslash\)n"{}}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2.\ Lidar\ Sensor\ Info\(\backslash\)n"{}}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}3.\ Back\(\backslash\)n"{}}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}4.\ Quit\(\backslash\)n"{}};}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_sensor_menu}{SensorMenu}}(\mbox{\hyperlink{class_robot}{Robot}}*\ robot)\ :\ \mbox{\hyperlink{class_menus_a100a136c94431b627f8b32548db9ccdc}{Menus}}(robot)\ \{\}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_menu_acd648c43423136cf6a6422dde483975f}{printChoice}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sensor_menu_a6c85245d165e20cb006af4d8db8f2c81}{run}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

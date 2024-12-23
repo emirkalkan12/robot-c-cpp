@@ -1,0 +1,42 @@
+\doxysection{Mapper.\+h}
+\hypertarget{_mapper_8h_source}{}\label{_mapper_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Mapper.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/Mapper.h}}
+\mbox{\hyperlink{_mapper_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ MAPPER\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ MAPPER\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_m_a_p_8h}{MAP.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_controler_8h}{RobotControler.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_record_8h}{Record.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mapper}{Mapper}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_m_a_p}{MAP}}*\ map;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ robotControler;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}*\ lidarSensor;\ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ \ \ \ *\ @brief\ Default\ constructor.}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ \ \ \ *\ }}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ \ *\ Initializes\ the\ Mapper\ with\ a\ default\ map,\ robot\ controler,\ and\ lidar\ sensor.}}
+\DoxyCodeLine{00045\ \textcolor{comment}{\ \ \ \ *\ @param\ map\ Pointer\ to\ the\ MAP\ object\ representing\ the\ map.}}
+\DoxyCodeLine{00046\ \textcolor{comment}{\ \ \ \ *\ @param\ robotControler\ Pointer\ to\ the\ RobotControler\ object\ managing\ the\ robot.}}
+\DoxyCodeLine{00047\ \textcolor{comment}{\ \ \ \ *\ @param\ lidarSensor\ Pointer\ to\ the\ LidarSensor\ object\ providing\ sensor\ data.}}
+\DoxyCodeLine{00048\ \textcolor{comment}{\ \ \ \ *\ }}
+\DoxyCodeLine{00049\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_mapper_a8dcb6071bba8602871b2ad3b66b95675}{Mapper}}(\mbox{\hyperlink{class_m_a_p}{MAP}}*\ map,\ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ robotControler,\ \mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}*\ lidarSensor);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mapper_a3e6f1d17b0c1f47a1de49d6c6d0762c8}{updateMap}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_mapper_a6696f7397475bae11f8cc20002f62e30}{recordMap}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mapper_a9ef2cbbc2974919674740f2838faba7e}{showMap}}();}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAPPER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,28 @@
+\doxysection{Safe\+Navigation.\+h}
+\hypertarget{_safe_navigation_8h_source}{}\label{_safe_navigation_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/SafeNavigation.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/SafeNavigation.h}}
+\mbox{\hyperlink{_safe_navigation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_robot_controler_8h}{RobotControler.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_safe_navigation_8h_a705ad9501f2b6a5292b8b508d511f53f}{MOVESTATE}}\ \{\ MOVING,\ STOP\ \};\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_safe_navigation}{SafeNavigation}}\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_i_r_sensor}{IRSensor}}*\ IR;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ controller;\ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{_safe_navigation_8h_a705ad9501f2b6a5292b8b508d511f53f}{MOVESTATE}}\ state;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_safe_navigation_a376d079fc65fe9adb7b4191216ee580d}{SafeNavigation}}(\mbox{\hyperlink{class_i_r_sensor}{IRSensor}}*\ ir,\ \mbox{\hyperlink{class_robot_controler}{RobotControler}}*\ ctrl);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3}{moveForwardSafe}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3}{moveBackwardSafe}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{_safe_navigation_8h_a705ad9501f2b6a5292b8b508d511f53f}{MOVESTATE}}\ \mbox{\hyperlink{class_safe_navigation_a2d9da0a96695ea6d5d79faf8ea7456bd}{getState}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ state;\ \}\ }
+\DoxyCodeLine{00068\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,38 @@
+\doxysection{MAP.\+h}
+\hypertarget{_m_a_p_8h_source}{}\label{_m_a_p_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/MAP.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/MAP.h}}
+\mbox{\hyperlink{_m_a_p_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ MAP\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ MAP\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point_8h}{Point.h}}"{}}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_m_a_p}{MAP}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<std::vector<int>>\ grid;\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ numberX;\ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ numberY;\ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ gridSize;\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_m_a_p_a09e6c436bfebb59838621c7e454492aa}{MAP}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_m_a_p_a09e6c436bfebb59838621c7e454492aa}{MAP}}(\textcolor{keywordtype}{int}\ numberX,\ \textcolor{keywordtype}{int}\ numberY,\ \textcolor{keywordtype}{double}\ gridSize);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_a_p_a77f2077b913c522ea5b1c485661f55b9}{insertPoint}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point}{Point}}\&\ point);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_m_a_p_afdc50a36268f6c3644be230d58ddf52f}{getGrid}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_a_p_adc5c6a3072ba9397954f8d7f4667717c}{setGrid}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_a_p_a1f32208b78a16ccde75cf9654493f29a}{clearMap}}();}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_a_p_aacf3ef1d685775e910ed615c7f844e79}{printInfo}}();}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_m_a_p_a81e0fe13541ea264db847d4c542680fd}{getNumberX}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_m_a_p_af1f3a7f63bdb33f0ade0a6090b15cf6f}{getNumberY}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_m_a_p_abadae4c15f6bdbb947a8bda48cedb73c}{getGridSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00101\ \textcolor{comment}{\ \ \ \ *\ @brief\ Sets\ the\ number\ of\ grids\ in\ the\ x\ direction.}}
+\DoxyCodeLine{00102\ \textcolor{comment}{\ \ \ \ *\ }}
+\DoxyCodeLine{00103\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ setGridSize(\textcolor{keywordtype}{double}\ \_gridsize);}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAP\_H}}
+
+\end{DoxyCode}

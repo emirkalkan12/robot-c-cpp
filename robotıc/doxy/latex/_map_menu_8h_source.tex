@@ -1,0 +1,30 @@
+\doxysection{Map\+Menu.\+h}
+\hypertarget{_map_menu_8h_source}{}\label{_map_menu_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/MapMenu.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/MapMenu.h}}
+\mbox{\hyperlink{_map_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menus_8h}{Menus.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_m_a_p_8h}{MAP.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mapper_8h}{Mapper.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lidar_sensor_8h}{LidarSensor.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_r_sensor_8h}{IRSensor.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_map_menu}{MapMenu}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_menus}{Menus}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ choice\ =\ \textcolor{stringliteral}{"{}1.\ Update\ Map\(\backslash\)n"{}}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2.\ Record\ Map\(\backslash\)n"{}}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}3.\ Show\ Map\(\backslash\)n"{}}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}4.\ Back\(\backslash\)n"{}}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}5.\ Quit\(\backslash\)n"{}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_map_menu}{MapMenu}}(\mbox{\hyperlink{class_robot}{Robot}}*\ robot)\ :\ \mbox{\hyperlink{class_menus_a100a136c94431b627f8b32548db9ccdc}{Menus}}(robot)\ \{\}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_menu_ae4103f320f5c015e321c32e2650f51e4}{printChoice}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_map_menu_ae5cfd02fc0c288413eb6a58f72da97d7}{run}}();}
+\DoxyCodeLine{00032\ \};}
+
+\end{DoxyCode}

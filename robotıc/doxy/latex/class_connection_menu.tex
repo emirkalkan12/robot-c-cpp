@@ -1,0 +1,108 @@
+\doxysection{Connection\+Menu Class Reference}
+\hypertarget{class_connection_menu}{}\label{class_connection_menu}\index{ConnectionMenu@{ConnectionMenu}}
+
+
+Represents the menu for managing robot connections.  
+
+
+
+
+{\ttfamily \#include $<$Connection\+Menu.\+h$>$}
+
+Inheritance diagram for Connection\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_connection_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_connection_menu_a2042054c52e7742d3455388c76d9c434}{Connection\+Menu}} (\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}robot)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_connection_menu}{Connection\+Menu}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_connection_menu_ac42aa4e4fa714975f8b43d9bf8c6f487}{print\+Choice}} () override
+\begin{DoxyCompactList}\small\item\em Prints the available choices in the connection menu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_connection_menu_aa5f41fe78906e98c2540efbd3e7614ca}{run}} () override
+\begin{DoxyCompactList}\small\item\em Runs the connection menu and performs corresponding actions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_menus}{Menus}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menus_a100a136c94431b627f8b32548db9ccdc}{Menus}} (\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}\+\_\+robot)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_menus}{Menus}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_menus}{Menus}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries connection\+Err} = "{}Please connect to robot before this action!"{}
+\item 
+\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*} {\bfseries robot}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the menu for managing robot connections. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_connection_menu_a2042054c52e7742d3455388c76d9c434}\index{ConnectionMenu@{ConnectionMenu}!ConnectionMenu@{ConnectionMenu}}
+\index{ConnectionMenu@{ConnectionMenu}!ConnectionMenu@{ConnectionMenu}}
+\doxysubsubsection{\texorpdfstring{ConnectionMenu()}{ConnectionMenu()}}
+{\footnotesize\ttfamily \label{class_connection_menu_a2042054c52e7742d3455388c76d9c434} 
+Connection\+Menu\+::\+Connection\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \texorpdfstring{$\ast$}{*}}]{robot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_connection_menu}{Connection\+Menu}. 
+
+Initializes the \doxylink{class_connection_menu}{Connection\+Menu} with a pointer to the \doxylink{class_robot}{Robot} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & Pointer to the \doxylink{class_robot}{Robot} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_connection_menu_ac42aa4e4fa714975f8b43d9bf8c6f487}\index{ConnectionMenu@{ConnectionMenu}!printChoice@{printChoice}}
+\index{printChoice@{printChoice}!ConnectionMenu@{ConnectionMenu}}
+\doxysubsubsection{\texorpdfstring{printChoice()}{printChoice()}}
+{\footnotesize\ttfamily \label{class_connection_menu_ac42aa4e4fa714975f8b43d9bf8c6f487} 
+void Connection\+Menu\+::print\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prints the available choices in the connection menu. 
+
+Prints the choices available in the connection menu.
+
+Outputs the available choices for the user in the connection menu.
+
+This function outputs the available choices for the user in the connection menu. 
+
+Reimplemented from \mbox{\hyperlink{class_menus_a89299be27d25a2875950b770e4062b1d}{Menus}}.
+
+\Hypertarget{class_connection_menu_aa5f41fe78906e98c2540efbd3e7614ca}\index{ConnectionMenu@{ConnectionMenu}!run@{run}}
+\index{run@{run}!ConnectionMenu@{ConnectionMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_connection_menu_aa5f41fe78906e98c2540efbd3e7614ca} 
+bool Connection\+Menu\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Runs the connection menu and performs corresponding actions. 
+
+This function displays the connection menu and allows the user to pick options such as connecting, disconnecting, returning to the main menu, or exiting the program.
+
+\begin{DoxyReturn}{Returns}
+Returns true to continue executing the main menu, false to exit the program. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_menus_a5e894c32ba24711a64643c80372b1575}{Menus}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_connection_menu_8h}{Connection\+Menu.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Connection\+Menu.\+cpp\end{DoxyCompactItemize}

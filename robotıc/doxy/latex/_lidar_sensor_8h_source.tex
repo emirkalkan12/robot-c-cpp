@@ -1,0 +1,56 @@
+\doxysection{Lidar\+Sensor.\+h}
+\hypertarget{_lidar_sensor_8h_source}{}\label{_lidar_sensor_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/LidarSensor.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/LidarSensor.h}}
+\mbox{\hyperlink{_lidar_sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../../oop\_project/Project\_Packet/FestoRobotAPI.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_interface_8h}{SensorInterface.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_festo_robot_sensor_interface_8h}{FestoRobotSensorInterface.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_festo_robot_sensor_interface}{FestoRobotSensorInterface}}\{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}*\ ranges;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ rangeNumber;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;\ \ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ *\ @brief\ Default\ constructor.}}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ \ \ \ \ *\ Initializes\ the\ ranges\ array\ and\ sets\ \`{}robotAPI`\ to\ nullptr.}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor}{LidarSensor}}(\mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI);}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_lidar_sensor_a6d31a7a0cfd7438217d259edd875b9a6}{\string~LidarSensor}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lidar_sensor_ae4c3fae33f0a62ee1ebac2decaa683c2}{update}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_a694e7287bd7deee160bbed768c42a91b}{getRange}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_addda17d8fbf2c3e3c5375ab97c4bd986}{getMin}}(\textcolor{keywordtype}{int}\&\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_aa29608884ed48c65f7832048208ee128}{getMax}}(\textcolor{keywordtype}{int}\&\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_a01148a1244540f90d759b42c8387aa9c}{operator[]}}(\textcolor{keywordtype}{int}\ i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_lidar_sensor_ac27e5edca99baeac22b33be4cc5d18ae}{getAngle}}(\textcolor{keywordtype}{int}\ i)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{comment}{//\ Implementasyonlar\ (SensorInterface)}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ updateSensor();}
+\DoxyCodeLine{00102\ \ \ \ \ std::string\ getSensorValue();}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ print();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{int}\ getRangeNumber()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ rangeNumber;\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \};}
+
+\end{DoxyCode}

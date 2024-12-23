@@ -1,0 +1,72 @@
+\doxysection{Encryption Class Reference}
+\hypertarget{class_encryption}{}\label{class_encryption}\index{Encryption@{Encryption}}
+
+
+A class for handling encryption and decryption of integer codes.  
+
+
+
+
+{\ttfamily \#include $<$Encryption.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_encryption_aacfa200068f543ff39ab077c9ebfeff6}{encrypt}} (int code)
+\begin{DoxyCompactList}\small\item\em Encrypts a given code. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_encryption_afc6877f5e4cd499ef702117fcfca6a5c}{decrypt}} (int code)
+\begin{DoxyCompactList}\small\item\em Decrypts a given code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for handling encryption and decryption of integer codes. 
+
+This class includes static methods for encrypting and decrypting codes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_encryption_afc6877f5e4cd499ef702117fcfca6a5c}\index{Encryption@{Encryption}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Encryption@{Encryption}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{class_encryption_afc6877f5e4cd499ef702117fcfca6a5c} 
+int Encryption\+::decrypt (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Decrypts a given code. 
+
+This static method takes an encrypted integer code and decrypts it back to the original 4-\/digit code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The encrypted code to be decrypted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The original code as an integer. 
+\end{DoxyReturn}
+\Hypertarget{class_encryption_aacfa200068f543ff39ab077c9ebfeff6}\index{Encryption@{Encryption}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Encryption@{Encryption}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{class_encryption_aacfa200068f543ff39ab077c9ebfeff6} 
+int Encryption\+::encrypt (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Encrypts a given code. 
+
+This static method takes a 4-\/digit integer code and encrypts it using a predefined algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The 4-\/digit integer code to be encrypted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The encrypted code as an integer. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_encryption_8h}{Encryption.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Encryption.\+cpp\end{DoxyCompactItemize}

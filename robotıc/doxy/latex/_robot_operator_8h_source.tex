@@ -1,0 +1,41 @@
+\doxysection{Robot\+Operator.\+h}
+\hypertarget{_robot_operator_8h_source}{}\label{_robot_operator_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/RobotOperator.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/RobotOperator.h}}
+\mbox{\hyperlink{_robot_operator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ ROBOTOPERATOR\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ ROBOTOPERATOR\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_encryption_8h}{Encryption.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_robot_operator}{RobotOperator}}}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ name;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ surname;\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ accessCode;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ accessState;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_robot_operator_af1c76d522c025ae3af13a38a5c362f8d}{RobotOperator}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ std::string\&\ surname,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ accessCode);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \mbox{\hyperlink{class_robot_operator_a7136c788c2ca2b4c96dd0c25d516afcd}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ std::string\ \mbox{\hyperlink{class_robot_operator_a55e116679915117121af4c8608127b71}{getSurname}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_operator_a76a07b349b56922dd55a77cb3fbf2754}{getAccessState}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_robot_operator_a651ff2c85ac93f04e52c26d127a8ef4a}{encryptCode}}(\textcolor{keywordtype}{int}\ code);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_robot_operator_ac8f4404a15bb95c0a4304a40a9cdf86c}{decryptCode}}(\textcolor{keywordtype}{int}\ code);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_robot_operator_a5a9a2fc37f4749038035e6297609801f}{checkAccessCode}}(\textcolor{keywordtype}{int}\ code);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_robot_operator_ae345c23989f73d0ed1b8a592e14343e1}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ROBOTOPERATOR\_H}}
+
+\end{DoxyCode}

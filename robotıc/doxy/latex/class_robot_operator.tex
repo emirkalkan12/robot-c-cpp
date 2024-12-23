@@ -1,0 +1,171 @@
+\doxysection{Robot\+Operator Class Reference}
+\hypertarget{class_robot_operator}{}\label{class_robot_operator}\index{RobotOperator@{RobotOperator}}
+
+
+A class to represent a robot operator with an access code.  
+
+
+
+
+{\ttfamily \#include $<$Robot\+Operator.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_robot_operator_af1c76d522c025ae3af13a38a5c362f8d}{Robot\+Operator}} (const std\+::string \&name, const std\+::string \&surname, unsigned int access\+Code)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_robot_operator}{Robot\+Operator}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_robot_operator_a7136c788c2ca2b4c96dd0c25d516afcd}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the operator\textquotesingle{}s first name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_robot_operator_a55e116679915117121af4c8608127b71}{get\+Surname}} () const
+\begin{DoxyCompactList}\small\item\em Gets the operator\textquotesingle{}s surname. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_operator_a76a07b349b56922dd55a77cb3fbf2754}{get\+Access\+State}} () const
+\begin{DoxyCompactList}\small\item\em Gets the access state of the operator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_robot_operator_a651ff2c85ac93f04e52c26d127a8ef4a}{encrypt\+Code}} (int code)
+\begin{DoxyCompactList}\small\item\em Encrypts the given code using the \doxylink{class_encryption}{Encryption} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_robot_operator_ac8f4404a15bb95c0a4304a40a9cdf86c}{decrypt\+Code}} (int code)
+\begin{DoxyCompactList}\small\item\em Decrypts the given code using the \doxylink{class_encryption}{Encryption} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_operator_a5a9a2fc37f4749038035e6297609801f}{check\+Access\+Code}} (int code)
+\begin{DoxyCompactList}\small\item\em Checks if the provided code matches the operator\textquotesingle{}s access code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_operator_ae345c23989f73d0ed1b8a592e14343e1}{print}} () const
+\begin{DoxyCompactList}\small\item\em Prints the operator\textquotesingle{}s details to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to represent a robot operator with an access code. 
+
+This class provides functionalities for managing an operator\textquotesingle{}s name, surname, access code, and access state. It also includes methods for encrypting and decrypting access codes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_robot_operator_af1c76d522c025ae3af13a38a5c362f8d}\index{RobotOperator@{RobotOperator}!RobotOperator@{RobotOperator}}
+\index{RobotOperator@{RobotOperator}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{RobotOperator()}{RobotOperator()}}
+{\footnotesize\ttfamily \label{class_robot_operator_af1c76d522c025ae3af13a38a5c362f8d} 
+Robot\+Operator\+::\+Robot\+Operator (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{const std\+::string \&}]{surname}{, }\item[{unsigned int}]{access\+Code}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_robot_operator}{Robot\+Operator}. 
+
+Initializes a robot operator with the given name, surname, and access code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The operator\textquotesingle{}s first name. \\
+\hline
+{\em surname} & The operator\textquotesingle{}s surname. \\
+\hline
+{\em access\+Code} & The operator\textquotesingle{}s access code. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_robot_operator_a5a9a2fc37f4749038035e6297609801f}\index{RobotOperator@{RobotOperator}!checkAccessCode@{checkAccessCode}}
+\index{checkAccessCode@{checkAccessCode}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{checkAccessCode()}{checkAccessCode()}}
+{\footnotesize\ttfamily \label{class_robot_operator_a5a9a2fc37f4749038035e6297609801f} 
+bool Robot\+Operator\+::check\+Access\+Code (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the provided code matches the operator\textquotesingle{}s access code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code to verify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the codes match, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_operator_ac8f4404a15bb95c0a4304a40a9cdf86c}\index{RobotOperator@{RobotOperator}!decryptCode@{decryptCode}}
+\index{decryptCode@{decryptCode}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{decryptCode()}{decryptCode()}}
+{\footnotesize\ttfamily \label{class_robot_operator_ac8f4404a15bb95c0a4304a40a9cdf86c} 
+int Robot\+Operator\+::decrypt\+Code (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption})}
+
+
+
+Decrypts the given code using the \doxylink{class_encryption}{Encryption} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code to be decrypted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decrypted code. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_operator_a651ff2c85ac93f04e52c26d127a8ef4a}\index{RobotOperator@{RobotOperator}!encryptCode@{encryptCode}}
+\index{encryptCode@{encryptCode}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{encryptCode()}{encryptCode()}}
+{\footnotesize\ttfamily \label{class_robot_operator_a651ff2c85ac93f04e52c26d127a8ef4a} 
+int Robot\+Operator\+::encrypt\+Code (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption})}
+
+
+
+Encrypts the given code using the \doxylink{class_encryption}{Encryption} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code to be encrypted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The encrypted code. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_operator_a76a07b349b56922dd55a77cb3fbf2754}\index{RobotOperator@{RobotOperator}!getAccessState@{getAccessState}}
+\index{getAccessState@{getAccessState}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{getAccessState()}{getAccessState()}}
+{\footnotesize\ttfamily \label{class_robot_operator_a76a07b349b56922dd55a77cb3fbf2754} 
+bool Robot\+Operator\+::get\+Access\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the access state of the operator. 
+
+\begin{DoxyReturn}{Returns}
+True if the operator has access, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_operator_a7136c788c2ca2b4c96dd0c25d516afcd}\index{RobotOperator@{RobotOperator}!getName@{getName}}
+\index{getName@{getName}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_robot_operator_a7136c788c2ca2b4c96dd0c25d516afcd} 
+std\+::string Robot\+Operator\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the operator\textquotesingle{}s first name. 
+
+\begin{DoxyReturn}{Returns}
+The operator\textquotesingle{}s first name. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_operator_a55e116679915117121af4c8608127b71}\index{RobotOperator@{RobotOperator}!getSurname@{getSurname}}
+\index{getSurname@{getSurname}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{getSurname()}{getSurname()}}
+{\footnotesize\ttfamily \label{class_robot_operator_a55e116679915117121af4c8608127b71} 
+std\+::string Robot\+Operator\+::get\+Surname (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the operator\textquotesingle{}s surname. 
+
+\begin{DoxyReturn}{Returns}
+The operator\textquotesingle{}s surname. 
+\end{DoxyReturn}
+\Hypertarget{class_robot_operator_ae345c23989f73d0ed1b8a592e14343e1}\index{RobotOperator@{RobotOperator}!print@{print}}
+\index{print@{print}!RobotOperator@{RobotOperator}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_robot_operator_ae345c23989f73d0ed1b8a592e14343e1} 
+void Robot\+Operator\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints the operator\textquotesingle{}s details to the console. 
+
+This includes the operator\textquotesingle{}s name, surname, and access state. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_robot_operator_8h}{Robot\+Operator.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Robot\+Operator.\+cpp\end{DoxyCompactItemize}

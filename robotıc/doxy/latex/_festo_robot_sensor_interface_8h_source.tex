@@ -1,0 +1,22 @@
+\doxysection{Festo\+Robot\+Sensor\+Interface.\+h}
+\hypertarget{_festo_robot_sensor_interface_8h_source}{}\label{_festo_robot_sensor_interface_8h_source}\index{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/FestoRobotSensorInterface.h@{C:/Users/Cem Levent/Desktop/sonnn/OOP\_Robotics\_Part1/OOP\_Robotic\_Project/OOP\_Robotic\_Project/FestoRobotSensorInterface.h}}
+\mbox{\hyperlink{_festo_robot_sensor_interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../../oop\_project/Project\_Packet/FestoRobotAPI.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_interface_8h}{SensorInterface.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_festo_robot_sensor_interface}{FestoRobotSensorInterface}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sensor_interface}{SensorInterface}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ sensorType;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ robotAPI;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_festo_robot_sensor_interface}{FestoRobotSensorInterface}}(\textcolor{keywordtype}{string}\ \_type,\ \mbox{\hyperlink{class_festo_robot_a_p_i}{FestoRobotAPI}}*\ \_robotAPI)\ :\ sensorType(\_type),\ \mbox{\hyperlink{class_sensor_interface}{SensorInterface}}(\_type),\ robotAPI(\_robotAPI)\ \{\}}
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

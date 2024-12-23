@@ -1,0 +1,94 @@
+\doxysection{Mock\+Festo\+Robot\+API Class Reference}
+\hypertarget{class_mock_festo_robot_a_p_i}{}\label{class_mock_festo_robot_a_p_i}\index{MockFestoRobotAPI@{MockFestoRobotAPI}}
+
+
+Mock class for \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}.  
+
+
+
+
+{\ttfamily \#include $<$Test\+Lidar\+Sensor.\+h$>$}
+
+Inheritance diagram for Mock\+Festo\+Robot\+API\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mock_festo_robot_a_p_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mock_festo_robot_a_p_i_ab21334ff95b2844f10aba3975ff3b42f}{Mock\+Festo\+Robot\+API}} (const std\+::vector$<$ float $>$ \&mock\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_mock_festo_robot_a_p_i}{Mock\+Festo\+Robot\+API}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mock_festo_robot_a_p_i_ade3dc402abf9d425cd30f157943db11a}{get\+Lidar\+Range}} (float \texorpdfstring{$\ast$}{*}range)
+\begin{DoxyCompactList}\small\item\em Simulates getting a Lidar range value. \end{DoxyCompactList}\item 
+\Hypertarget{class_mock_festo_robot_a_p_i_a715c01970a24e1cde14bab6e50f8b232}\label{class_mock_festo_robot_a_p_i_a715c01970a24e1cde14bab6e50f8b232} 
+void {\bfseries reset} ()
+\begin{DoxyCompactList}\small\item\em Resets the mock API\textquotesingle{}s internal state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_festo_robot_a_p_i}{Festo\+Robot\+API}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries connect} ()
+\item 
+void {\bfseries disconnect} ()
+\item 
+void {\bfseries move} (DIRECTION)
+\item 
+void {\bfseries rotate} (DIRECTION)
+\item 
+void {\bfseries stop} ()
+\item 
+double {\bfseries get\+IRRange} (int i)
+\item 
+void {\bfseries get\+XYTh} (double \&X, double \&Y, double \&TH)
+\item 
+void {\bfseries get\+Lidar\+Range} (float \texorpdfstring{$\ast$}{*})
+\item 
+int {\bfseries get\+Lidar\+Range\+Number} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mock class for \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API}. 
+
+Simulates the behavior of the real \doxylink{class_festo_robot_a_p_i}{Festo\+Robot\+API} for testing purposes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mock_festo_robot_a_p_i_ab21334ff95b2844f10aba3975ff3b42f}\index{MockFestoRobotAPI@{MockFestoRobotAPI}!MockFestoRobotAPI@{MockFestoRobotAPI}}
+\index{MockFestoRobotAPI@{MockFestoRobotAPI}!MockFestoRobotAPI@{MockFestoRobotAPI}}
+\doxysubsubsection{\texorpdfstring{MockFestoRobotAPI()}{MockFestoRobotAPI()}}
+{\footnotesize\ttfamily \label{class_mock_festo_robot_a_p_i_ab21334ff95b2844f10aba3975ff3b42f} 
+Mock\+Festo\+Robot\+API\+::\+Mock\+Festo\+Robot\+API (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{mock\+Data}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_mock_festo_robot_a_p_i}{Mock\+Festo\+Robot\+API}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mock\+Data} & A vector of mock range values. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mock_festo_robot_a_p_i_ade3dc402abf9d425cd30f157943db11a}\index{MockFestoRobotAPI@{MockFestoRobotAPI}!getLidarRange@{getLidarRange}}
+\index{getLidarRange@{getLidarRange}!MockFestoRobotAPI@{MockFestoRobotAPI}}
+\doxysubsubsection{\texorpdfstring{getLidarRange()}{getLidarRange()}}
+{\footnotesize\ttfamily \label{class_mock_festo_robot_a_p_i_ade3dc402abf9d425cd30f157943db11a} 
+virtual void Mock\+Festo\+Robot\+API\+::get\+Lidar\+Range (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}}]{range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Simulates getting a Lidar range value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & Pointer to store the retrieved range value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Test\+Lidar\+Sensor.\+h\end{DoxyCompactItemize}

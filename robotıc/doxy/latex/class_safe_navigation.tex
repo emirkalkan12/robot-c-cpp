@@ -1,0 +1,82 @@
+\doxysection{Safe\+Navigation Class Reference}
+\hypertarget{class_safe_navigation}{}\label{class_safe_navigation}\index{SafeNavigation@{SafeNavigation}}
+
+
+Manages safe movement of the robot using the IR sensor and robot controller.  
+
+
+
+
+{\ttfamily \#include $<$Safe\+Navigation.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_safe_navigation_a376d079fc65fe9adb7b4191216ee580d}{Safe\+Navigation}} (\mbox{\hyperlink{class_i_r_sensor}{IRSensor}} \texorpdfstring{$\ast$}{*}ir, \mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}ctrl)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_safe_navigation}{Safe\+Navigation} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3}{move\+Forward\+Safe}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_safe_navigation}{Safe\+Navigation} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3}{move\+Backward\+Safe}} ()
+\begin{DoxyCompactList}\small\item\em Moves the robot backward safely. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_safe_navigation_8h_a705ad9501f2b6a5292b8b508d511f53f}{MOVESTATE}} \mbox{\hyperlink{class_safe_navigation_a2d9da0a96695ea6d5d79faf8ea7456bd}{get\+State}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages safe movement of the robot using the IR sensor and robot controller. 
+
+The \doxylink{class_safe_navigation}{Safe\+Navigation} class interacts with the \doxylink{class_i_r_sensor}{IRSensor} to retrieve distance data and with the \doxylink{class_robot_controler}{Robot\+Controler} to control the robot\textquotesingle{}s movements. It ensures that the robot moves safely by considering sensor readings during forward and backward motion. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_safe_navigation_a376d079fc65fe9adb7b4191216ee580d}\index{SafeNavigation@{SafeNavigation}!SafeNavigation@{SafeNavigation}}
+\index{SafeNavigation@{SafeNavigation}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{SafeNavigation()}{SafeNavigation()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_a376d079fc65fe9adb7b4191216ee580d} 
+Safe\+Navigation\+::\+Safe\+Navigation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_r_sensor}{IRSensor}} \texorpdfstring{$\ast$}{*}}]{ir}{, }\item[{\mbox{\hyperlink{class_robot_controler}{Robot\+Controler}} \texorpdfstring{$\ast$}{*}}]{ctrl}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_safe_navigation}{Safe\+Navigation} class. 
+
+Initializes the \doxylink{class_safe_navigation}{Safe\+Navigation} object with references to the IR sensor and robot controller. Sets the initial state to STOP. 
+\begin{DoxyParams}{Parameters}
+{\em ir} & A pointer to an \doxylink{class_i_r_sensor}{IRSensor} object for interacting with the sensor. \\
+\hline
+{\em ctrl} & A pointer to a \doxylink{class_robot_controler}{Robot\+Controler} object for controlling the robot. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_safe_navigation_a2d9da0a96695ea6d5d79faf8ea7456bd}\index{SafeNavigation@{SafeNavigation}!getState@{getState}}
+\index{getState@{getState}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_a2d9da0a96695ea6d5d79faf8ea7456bd} 
+\mbox{\hyperlink{_safe_navigation_8h_a705ad9501f2b6a5292b8b508d511f53f}{MOVESTATE}} Safe\+Navigation\+::get\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current movement state of the robot. \Hypertarget{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3}\index{SafeNavigation@{SafeNavigation}!moveBackwardSafe@{moveBackwardSafe}}
+\index{moveBackwardSafe@{moveBackwardSafe}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{moveBackwardSafe()}{moveBackwardSafe()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_a32999e8bbfea10d9797030c0fefb70e3} 
+void Safe\+Navigation\+::move\+Backward\+Safe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Moves the robot backward safely. 
+
+Moves the robot backward while ensuring safety by monitoring the IR sensor data. The robot will stop if an obstacle is detected within a predefined range. \Hypertarget{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3}\index{SafeNavigation@{SafeNavigation}!moveForwardSafe@{moveForwardSafe}}
+\index{moveForwardSafe@{moveForwardSafe}!SafeNavigation@{SafeNavigation}}
+\doxysubsubsection{\texorpdfstring{moveForwardSafe()}{moveForwardSafe()}}
+{\footnotesize\ttfamily \label{class_safe_navigation_afc10b011059ba730d569c1b3f53e99a3} 
+void Safe\+Navigation\+::move\+Forward\+Safe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_safe_navigation}{Safe\+Navigation} class. 
+
+Frees any dynamically allocated resources (if any). In this case, it doesn\textquotesingle{}t perform any specific action as there are no dynamically allocated resources. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_safe_navigation_8h}{Safe\+Navigation.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Safe\+Navigation.\+cpp\end{DoxyCompactItemize}

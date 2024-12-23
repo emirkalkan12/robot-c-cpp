@@ -1,0 +1,364 @@
+\doxysection{Pose Class Reference}
+\hypertarget{class_pose}{}\label{class_pose}\index{Pose@{Pose}}
+
+
+\doxylink{class_pose}{Pose} class.  
+
+
+
+
+{\ttfamily \#include $<$Pose.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose_a49fd35f550ecdbda9b0bcf8344283717}{Pose}} (double x, double y, double th)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pose_aaeeb27b336a6cfc08ae77b2bb5d8ba75}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Getter for x-\/coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pose_a9d1efd2c1807e1419dc81ba75e35e929}{setX}} (double x)
+\begin{DoxyCompactList}\small\item\em Setter for x-\/coordinate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pose_a5330d6027f92e5b2aaefd2f6a8a11c10}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Getter for y-\/coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac}{setY}} (double y)
+\begin{DoxyCompactList}\small\item\em Setter for y-\/coordinate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pose_afd620e880fccff50310213cc4274e893}{get\+Th}} ()
+\begin{DoxyCompactList}\small\item\em Getter for orientation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pose_ae2155663de71ff3d7decb6b7807f5c64}{set\+Th}} (double th)
+\begin{DoxyCompactList}\small\item\em Setter for orientation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pose_aa42067a0e15aa46dc8b9efff3881b5dc}{operator==}} (const \mbox{\hyperlink{class_pose}{Pose}} \&other)
+\begin{DoxyCompactList}\small\item\em Equality operator to compare two \doxylink{class_pose}{Pose} objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_pose_a1c867394d66270d4a298ba7356bac85d}{operator+}} (const \mbox{\hyperlink{class_pose}{Pose}} \&other)
+\begin{DoxyCompactList}\small\item\em Addition operator to add two \doxylink{class_pose}{Pose} objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \mbox{\hyperlink{class_pose_ad84fca234e5b3a9544e4ce7ee6ec33c7}{operator-\/}} (const \mbox{\hyperlink{class_pose}{Pose}} \&other)
+\begin{DoxyCompactList}\small\item\em Subtraction operator to subtract one \doxylink{class_pose}{Pose} from another. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \& \mbox{\hyperlink{class_pose_a625f72535a51d90e48fd341fdcf8bf94}{operator+=}} (const double \&other)
+\begin{DoxyCompactList}\small\item\em Addition and assignment operator to update this \doxylink{class_pose}{Pose} by adding a scalar value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pose}{Pose}} \& \mbox{\hyperlink{class_pose_a99d46bfa08be1c18d967a87780c7b084}{operator-\/=}} (const double \&other)
+\begin{DoxyCompactList}\small\item\em Subtraction and assignment operator to update this \doxylink{class_pose}{Pose} by subtracting a scalar value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pose_a46ba39b98947ead3dd1b540e5eae894e}{operator$<$}} (const \mbox{\hyperlink{class_pose}{Pose}} \&other)
+\begin{DoxyCompactList}\small\item\em Less-\/than operator to compare two \doxylink{class_pose}{Pose} objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pose_ad825de82a342050f295e2585a7ba63fd}{get\+Pose}} (double \&\+\_\+x, double \&\+\_\+y, double \&\+\_\+th)
+\begin{DoxyCompactList}\small\item\em Retrieves the current \doxylink{class_pose}{Pose} values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pose_af6457955dbb4d6ffbd812c9fab70b999}{set\+Pose}} (double \+\_\+x, double \+\_\+y, double \+\_\+th)
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_pose}{Pose} values. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pose_acc6ce39f14ab3690842940f117ad66d4}{find\+Distance\+To}} (const \mbox{\hyperlink{class_pose}{Pose}} \&pos)
+\begin{DoxyCompactList}\small\item\em Calculates the Euclidean distance to another \doxylink{class_pose}{Pose}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pose_a64e81f9dfdadeaf75c543011033678c1}{find\+Angle\+To}} (const \mbox{\hyperlink{class_pose}{Pose}} \&pos)
+\begin{DoxyCompactList}\small\item\em Calculates the angle between this \doxylink{class_pose}{Pose} and another \doxylink{class_pose}{Pose}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_pose}{Pose} class. 
+
+Represents the position and orientation of a robot in a 2D space.
+
+The \doxylink{class_pose}{Pose} class stores the x and y coordinates (in meters) and the orientation (theta, in degrees) of a robot in a 2D space. It provides functionalities for setting and retrieving these values, as well as performing operations such as distance and angle calculations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad}\index{Pose@{Pose}!Pose@{Pose}}
+\index{Pose@{Pose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{Pose()}{Pose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_pose_a8a4171c8a6b09e37fb011997da9ea2ad} 
+Pose\+::\+Pose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Initializes the \doxylink{class_pose}{Pose} object with default values (x = 0, y = 0, th = 0). \Hypertarget{class_pose_a49fd35f550ecdbda9b0bcf8344283717}\index{Pose@{Pose}!Pose@{Pose}}
+\index{Pose@{Pose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{Pose()}{Pose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_pose_a49fd35f550ecdbda9b0bcf8344283717} 
+Pose\+::\+Pose (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{double}]{th}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+Initializes the \doxylink{class_pose}{Pose} object with specified values. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Initial x-\/coordinate (in meters). \\
+\hline
+{\em y} & Initial y-\/coordinate (in meters). \\
+\hline
+{\em th} & Initial orientation (in degrees). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pose_a64e81f9dfdadeaf75c543011033678c1}\index{Pose@{Pose}!findAngleTo@{findAngleTo}}
+\index{findAngleTo@{findAngleTo}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{findAngleTo()}{findAngleTo()}}
+{\footnotesize\ttfamily \label{class_pose_a64e81f9dfdadeaf75c543011033678c1} 
+double Pose\+::find\+Angle\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pose}{Pose}} \&}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the angle between this \doxylink{class_pose}{Pose} and another \doxylink{class_pose}{Pose}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Another \doxylink{class_pose}{Pose} object to calculate the angle to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle to the specified \doxylink{class_pose}{Pose} in radians. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_acc6ce39f14ab3690842940f117ad66d4}\index{Pose@{Pose}!findDistanceTo@{findDistanceTo}}
+\index{findDistanceTo@{findDistanceTo}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{findDistanceTo()}{findDistanceTo()}}
+{\footnotesize\ttfamily \label{class_pose_acc6ce39f14ab3690842940f117ad66d4} 
+double Pose\+::find\+Distance\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pose}{Pose}} \&}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the Euclidean distance to another \doxylink{class_pose}{Pose}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Another \doxylink{class_pose}{Pose} object to calculate the distance to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance to the specified \doxylink{class_pose}{Pose} (in meters). 
+\end{DoxyReturn}
+\Hypertarget{class_pose_ad825de82a342050f295e2585a7ba63fd}\index{Pose@{Pose}!getPose@{getPose}}
+\index{getPose@{getPose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \label{class_pose_ad825de82a342050f295e2585a7ba63fd} 
+void Pose\+::get\+Pose (\begin{DoxyParamCaption}\item[{double \&}]{\+\_\+x}{, }\item[{double \&}]{\+\_\+y}{, }\item[{double \&}]{\+\_\+th}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the current \doxylink{class_pose}{Pose} values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & Reference to store the x-\/coordinate (in meters). \\
+\hline
+{\em \+\_\+y} & Reference to store the y-\/coordinate (in meters). \\
+\hline
+{\em \+\_\+th} & Reference to store the orientation (in degrees). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pose_afd620e880fccff50310213cc4274e893}\index{Pose@{Pose}!getTh@{getTh}}
+\index{getTh@{getTh}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getTh()}{getTh()}}
+{\footnotesize\ttfamily \label{class_pose_afd620e880fccff50310213cc4274e893} 
+double Pose\+::get\+Th (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter for orientation. 
+
+\begin{DoxyReturn}{Returns}
+The orientation (theta) of the \doxylink{class_pose}{Pose} (in degrees). 
+\end{DoxyReturn}
+\Hypertarget{class_pose_aaeeb27b336a6cfc08ae77b2bb5d8ba75}\index{Pose@{Pose}!getX@{getX}}
+\index{getX@{getX}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_pose_aaeeb27b336a6cfc08ae77b2bb5d8ba75} 
+double Pose\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter for x-\/coordinate. 
+
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate of the \doxylink{class_pose}{Pose} (in meters). 
+\end{DoxyReturn}
+\Hypertarget{class_pose_a5330d6027f92e5b2aaefd2f6a8a11c10}\index{Pose@{Pose}!getY@{getY}}
+\index{getY@{getY}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_pose_a5330d6027f92e5b2aaefd2f6a8a11c10} 
+double Pose\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Getter for y-\/coordinate. 
+
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate of the \doxylink{class_pose}{Pose} (in meters). 
+\end{DoxyReturn}
+\Hypertarget{class_pose_a1c867394d66270d4a298ba7356bac85d}\index{Pose@{Pose}!operator+@{operator+}}
+\index{operator+@{operator+}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_pose_a1c867394d66270d4a298ba7356bac85d} 
+\mbox{\hyperlink{class_pose}{Pose}} Pose\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Addition operator to add two \doxylink{class_pose}{Pose} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_pose}{Pose} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_pose}{Pose} object with the result of the addition. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_a625f72535a51d90e48fd341fdcf8bf94}\index{Pose@{Pose}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{class_pose_a625f72535a51d90e48fd341fdcf8bf94} 
+\mbox{\hyperlink{class_pose}{Pose}} \& Pose\+::operator+= (\begin{DoxyParamCaption}\item[{const double \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Addition and assignment operator to update this \doxylink{class_pose}{Pose} by adding a scalar value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A scalar value to add to the current \doxylink{class_pose}{Pose}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{class_pose}{Pose} object. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_ad84fca234e5b3a9544e4ce7ee6ec33c7}\index{Pose@{Pose}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_pose_ad84fca234e5b3a9544e4ce7ee6ec33c7} 
+\mbox{\hyperlink{class_pose}{Pose}} Pose\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Subtraction operator to subtract one \doxylink{class_pose}{Pose} from another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_pose}{Pose} object to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_pose}{Pose} object with the result of the subtraction. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_a99d46bfa08be1c18d967a87780c7b084}\index{Pose@{Pose}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \label{class_pose_a99d46bfa08be1c18d967a87780c7b084} 
+\mbox{\hyperlink{class_pose}{Pose}} \& Pose\+::operator-\/= (\begin{DoxyParamCaption}\item[{const double \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Subtraction and assignment operator to update this \doxylink{class_pose}{Pose} by subtracting a scalar value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A scalar value to subtract from the current \doxylink{class_pose}{Pose}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{class_pose}{Pose} object. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_a46ba39b98947ead3dd1b540e5eae894e}\index{Pose@{Pose}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_pose_a46ba39b98947ead3dd1b540e5eae894e} 
+bool Pose\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Less-\/than operator to compare two \doxylink{class_pose}{Pose} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_pose}{Pose} object to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \doxylink{class_pose}{Pose} is less than the other \doxylink{class_pose}{Pose}, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_aa42067a0e15aa46dc8b9efff3881b5dc}\index{Pose@{Pose}!operator==@{operator==}}
+\index{operator==@{operator==}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_pose_aa42067a0e15aa46dc8b9efff3881b5dc} 
+bool Pose\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pose}{Pose}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Equality operator to compare two \doxylink{class_pose}{Pose} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_pose}{Pose} object to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both \doxylink{class_pose}{Pose} objects are equal, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_pose_af6457955dbb4d6ffbd812c9fab70b999}\index{Pose@{Pose}!setPose@{setPose}}
+\index{setPose@{setPose}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setPose()}{setPose()}}
+{\footnotesize\ttfamily \label{class_pose_af6457955dbb4d6ffbd812c9fab70b999} 
+void Pose\+::set\+Pose (\begin{DoxyParamCaption}\item[{double}]{\+\_\+x}{, }\item[{double}]{\+\_\+y}{, }\item[{double}]{\+\_\+th}{}\end{DoxyParamCaption})}
+
+
+
+Sets the \doxylink{class_pose}{Pose} values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & New x-\/coordinate (in meters). \\
+\hline
+{\em \+\_\+y} & New y-\/coordinate (in meters). \\
+\hline
+{\em \+\_\+th} & New orientation (in degrees). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pose_ae2155663de71ff3d7decb6b7807f5c64}\index{Pose@{Pose}!setTh@{setTh}}
+\index{setTh@{setTh}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setTh()}{setTh()}}
+{\footnotesize\ttfamily \label{class_pose_ae2155663de71ff3d7decb6b7807f5c64} 
+void Pose\+::set\+Th (\begin{DoxyParamCaption}\item[{double}]{th}{}\end{DoxyParamCaption})}
+
+
+
+Setter for orientation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em th} & New orientation to set (in degrees). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pose_a9d1efd2c1807e1419dc81ba75e35e929}\index{Pose@{Pose}!setX@{setX}}
+\index{setX@{setX}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily \label{class_pose_a9d1efd2c1807e1419dc81ba75e35e929} 
+void Pose\+::setX (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Setter for x-\/coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & New x-\/coordinate to set (in meters). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac}\index{Pose@{Pose}!setY@{setY}}
+\index{setY@{setY}!Pose@{Pose}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily \label{class_pose_a8b9fe0a5cc5d1b48262566121cea1fac} 
+void Pose\+::setY (\begin{DoxyParamCaption}\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Setter for y-\/coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & New y-\/coordinate to set (in meters). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\mbox{\hyperlink{_pose_8h}{Pose.\+h}}\item 
+C\+:/\+Users/\+Cem Levent/\+Desktop/sonnn/\+OOP\+\_\+\+Robotics\+\_\+\+Part1/\+OOP\+\_\+\+Robotic\+\_\+\+Project/\+OOP\+\_\+\+Robotic\+\_\+\+Project/Pose.\+cpp\end{DoxyCompactItemize}
